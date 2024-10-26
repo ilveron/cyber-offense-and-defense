@@ -1,0 +1,148 @@
+carlos          200 0.306802
+root            200 0.277944
+admin           200 0.28291
+test            200 0.271425
+guest           200 0.295674
+info            200 0.282007
+adm             200 0.292145
+mysql           200 0.265689
+user            200 0.272122
+administrator           200 0.268928
+oracle          200 0.271904
+ftp             200 0.270018
+pi              200 0.278248
+puppet          200 0.274423
+ansible         200 0.276531
+ec2-user                200 0.297544
+vagrant         200 0.279615
+azureuser               200 0.293234
+academico               200 0.291301
+acceso          200 0.265469
+access          200 0.288762
+accounting              200 0.27577
+accounts                200 0.275277
+acid            200 0.285739
+activestat              200 0.289453
+ad              200 0.283205
+adam            200 0.287364
+adkit           200 0.278505
+admin           200 0.272216
+administracion          200 0.277051
+administrador           200 0.28508
+administrator           200 0.265683
+administrators          200 0.285602
+admins          200 0.289647
+ads             200 0.269712
+adserver                200 0.280346
+adsl            200 0.26724
+ae              200 0.268398
+af              200 0.282363
+affiliate               200 0.273892
+affiliates              200 0.287469
+afiliados               200 0.266372
+ag              200 0.284865
+agenda          200 0.290173
+agent           200 0.270724
+ai              200 0.260145
+aix             200 0.27042
+ajax            200 0.27897
+ak              200 0.280578
+akamai          200 0.279005
+al              200 0.287006
+alabama         200 0.269774
+alaska          200 0.272758
+albuquerque             200 0.291638
+alerts          200 0.284995
+alpha           200 0.281798
+alterwind               200 0.281132
+am              200 3.05281
+amarillo                200 0.262027
+americas                200 0.276596
+an              200 0.287879
+anaheim         200 0.278798
+analyzer                200 0.277573
+announce                200 0.272959
+announcements           200 0.281029
+antivirus               200 0.283672
+ao              200 0.274649
+ap              200 0.279571
+apache          200 0.272966
+apollo          200 0.284878
+app             200 0.294467
+app01           200 0.289244
+app1            200 0.263592
+apple           200 0.282491
+application             200 0.290309
+applications            200 0.294674
+apps            200 0.279063
+appserver               200 0.278826
+aq              200 0.274851
+ar              200 0.277731
+archie          200 0.269161
+arcsight                200 0.273673
+argentina               200 0.268815
+arizona         200 0.26636
+arkansas                200 0.277483
+arlington               200 0.268018
+as              200 0.271237
+as400           200 0.278289
+asia            200 0.281318
+asterix         200 0.280914
+at              200 0.271257
+athena          200 0.282491
+atlanta         200 0.28355
+atlas           200 0.287511
+att             200 0.28784
+au              200 0.284204
+auction         200 0.272879
+austin          200 0.276518
+auth            200 0.2629
+auto            200 0.272264
+autodiscover            200 0.273754
+Trying usernames ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:31
+
+Found username: am
+
+123456          200
+password                200
+12345678                200
+qwerty          200
+123456789               200
+12345           200
+1234            200
+111111          200
+1234567         200
+dragon          200
+123123          200
+baseball                200
+abc123          200
+football                200
+monkey          200
+letmein         200
+shadow          200
+master          200
+666666          200
+qwertyuiop              200
+123321          200
+mustang         200
+1234567890              200
+michael         200
+654321          200
+superman                200
+1qaz2wsx                200
+7777777         200
+121212          200
+000000          200
+qazwsx          200
+123qwe          200
+killer          200
+trustno1                200
+jordan          200
+jennifer                200
+zxcvbnm         200
+asdfgh          200
+hunter          200
+buster          302
+Trying passwords ━━━━━━━━━━━━━━━╸━━━━━━━━━━━━━━━━━━━━━━━━  39% 0:00:20
+
+Found password: buster

@@ -1,0 +1,58 @@
+GET https://0a4900b803117d2a848bc550003700c7.web-security-academy.net/product?productId=ciao HTTP/1.1
+host: 0a4900b803117d2a848bc550003700c7.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: session=YVor3lK9GOJsUiUIilfculEql0GZbeJr
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+HTTP/1.1 500 Internal Server Error
+Connection: close
+Content-Length: 1768
+
+Internal Server Error: java.lang.NumberFormatException: For input string: "ciao"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Integer.parseInt(Integer.java:661)
+	at java.base/java.lang.Integer.parseInt(Integer.java:777)
+	at lab.r.l.u.o.l(Unknown Source)
+	at lab.v.v.t.v.P(Unknown Source)
+	at lab.v.v.b.e.m.O(Unknown Source)
+	at lab.v.v.b.a.lambda$handleSubRequest$0(Unknown Source)
+	at q.x.y.y.lambda$null$3(Unknown Source)
+	at q.x.y.y.H(Unknown Source)
+	at q.x.y.y.lambda$uncheckedFunction$4(Unknown Source)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at lab.v.v.b.a.N(Unknown Source)
+	at lab.server.d.s.m.z(Unknown Source)
+	at lab.v.v.v.S(Unknown Source)
+	at lab.v.v.v.z(Unknown Source)
+	at lab.server.d.s.q.p.V(Unknown Source)
+	at lab.server.d.s.q.u.lambda$handle$0(Unknown Source)
+	at lab.r.i.m.r.P(Unknown Source)
+	at lab.server.d.s.q.u.X(Unknown Source)
+	at lab.server.d.s.k.l(Unknown Source)
+	at q.x.y.y.lambda$null$3(Unknown Source)
+	at q.x.y.y.H(Unknown Source)
+	at q.x.y.y.lambda$uncheckedFunction$4(Unknown Source)
+	at lab.server.g9.z(Unknown Source)
+	at lab.server.d.s.k.s(Unknown Source)
+	at lab.server.d.c.f.A(Unknown Source)
+	at lab.server.d.j.r(Unknown Source)
+	at lab.server.d.o.r(Unknown Source)
+	at lab.server.gf.G(Unknown Source)
+	at lab.server.gf.c(Unknown Source)
+	at lab.server.gf.w(Unknown Source)
+	at q.x.o.x.k.B(Unknown Source)
+	at q.x.o.x.k.L(Unknown Source)
+	at q.x.o.x.k.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Apache Struts 2 2.3.31

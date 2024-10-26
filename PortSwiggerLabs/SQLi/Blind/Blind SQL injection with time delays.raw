@@ -1,0 +1,226 @@
+GET https://0a15006e03e585e1838538f800900078.web-security-academy.net/ HTTP/1.1
+host: 0a15006e03e585e1838538f800900078.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+Priority: u=0, i
+content-length: 0
+Cookie: TrackingId=d0XycLgDg3i0McHm'||pg_sleep(10); session=6cPRLNakm2IF56yFHIobFCo3lRlsOOG4
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 11329
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>Blind SQL injection with time delays</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>Blind SQL injection with time delays</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/sql-injection/blind/lab-time-delays'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <section class="search-filters">
+                        <label>Refine your search:</label>
+                        <a class="filter-category selected" href="/">All</a>
+                        <a class="filter-category" href="/filter?category=Clothing%2c+shoes+and+accessories">Clothing, shoes and accessories</a>
+                        <a class="filter-category" href="/filter?category=Food+%26+Drink">Food & Drink</a>
+                        <a class="filter-category" href="/filter?category=Lifestyle">Lifestyle</a>
+                        <a class="filter-category" href="/filter?category=Pets">Pets</a>
+                        <a class="filter-category" href="/filter?category=Tech+gifts">Tech gifts</a>
+                    </section>
+                    <section class="container-list-tiles">
+                        <div>
+                            <img src="/image/productcatalog/products/18.jpg">
+                            <h3>Portable Hat</h3>
+                            <img src="/resources/images/rating1.png">
+                            $14.94
+                            <a class="button" href="/product?productId=2">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/24.jpg">
+                            <h3>The Alternative Christmas Tree</h3>
+                            <img src="/resources/images/rating2.png">
+                            $78.02
+                            <a class="button" href="/product?productId=7">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/43.jpg">
+                            <h3>First Impression Costumes</h3>
+                            <img src="/resources/images/rating4.png">
+                            $75.49
+                            <a class="button" href="/product?productId=12">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/27.jpg">
+                            <h3>The Trolley-ON</h3>
+                            <img src="/resources/images/rating1.png">
+                            $5.12
+                            <a class="button" href="/product?productId=17">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/1.jpg">
+                            <h3>Eggtastic, Fun, Food Eggcessories</h3>
+                            <img src="/resources/images/rating2.png">
+                            $0.53
+                            <a class="button" href="/product?productId=1">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/29.jpg">
+                            <h3>Waterproof Tea Bags</h3>
+                            <img src="/resources/images/rating3.png">
+                            $39.42
+                            <a class="button" href="/product?productId=6">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/48.jpg">
+                            <h3>BBQ Suitcase</h3>
+                            <img src="/resources/images/rating2.png">
+                            $40.44
+                            <a class="button" href="/product?productId=11">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/23.jpg">
+                            <h3>Sprout More Brain Power</h3>
+                            <img src="/resources/images/rating3.png">
+                            $75.51
+                            <a class="button" href="/product?productId=16">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/11.jpg">
+                            <h3>Gym Suit</h3>
+                            <img src="/resources/images/rating5.png">
+                            $97.11
+                            <a class="button" href="/product?productId=5">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/44.jpg">
+                            <h3>Paint a rainbow</h3>
+                            <img src="/resources/images/rating2.png">
+                            $85.79
+                            <a class="button" href="/product?productId=10">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/67.jpg">
+                            <h3>Your Virtual Journey Starts Here</h3>
+                            <img src="/resources/images/rating1.png">
+                            $34.89
+                            <a class="button" href="/product?productId=15">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/65.jpg">
+                            <h3>Eco Boat</h3>
+                            <img src="/resources/images/rating3.png">
+                            $95.90
+                            <a class="button" href="/product?productId=20">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/9.jpg">
+                            <h3>Fur Babies</h3>
+                            <img src="/resources/images/rating1.png">
+                            $40.72
+                            <a class="button" href="/product?productId=4">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/42.jpg">
+                            <h3>Pest Control Umbrella</h3>
+                            <img src="/resources/images/rating3.png">
+                            $14.88
+                            <a class="button" href="/product?productId=9">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/56.jpg">
+                            <h3>More Than Just Birdsong</h3>
+                            <img src="/resources/images/rating3.png">
+                            $20.16
+                            <a class="button" href="/product?productId=14">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/22.jpg">
+                            <h3>Babbage Web Spray</h3>
+                            <img src="/resources/images/rating4.png">
+                            $63.58
+                            <a class="button" href="/product?productId=19">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/73.jpg">
+                            <h3>Beat the Vacation Traffic</h3>
+                            <img src="/resources/images/rating2.png">
+                            $16.56
+                            <a class="button" href="/product?productId=3">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/16.jpg">
+                            <h3>Photobomb Backdrops</h3>
+                            <img src="/resources/images/rating4.png">
+                            $43.36
+                            <a class="button" href="/product?productId=8">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/2.jpg">
+                            <h3>All-in-One Typewriter</h3>
+                            <img src="/resources/images/rating1.png">
+                            $14.58
+                            <a class="button" href="/product?productId=13">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/57.jpg">
+                            <h3>Lightbulb Moments</h3>
+                            <img src="/resources/images/rating4.png">
+                            $94.95
+                            <a class="button" href="/product?productId=18">View details</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>

