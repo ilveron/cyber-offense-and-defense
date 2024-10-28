@@ -1,0 +1,21 @@
+GET https://0a220062049a541a801c3a5d00fc0021.web-security-academy.net/download-transcript/2.txt HTTP/1.1
+host: 0a220062049a541a801c3a5d00fc0021.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://0a220062049a541a801c3a5d00fc0021.web-security-academy.net/chat
+Connection: keep-alive
+Cookie: session=90QBF4EbYVmysKEVvzfG3UlP0BFfhcZ1
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="2.txt"
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 147
+
+CONNECTED: -- Now chatting with Hal Pline --<br/>You: aru francaglio<br/>Hal Pline: Perhaps try and speak more politely and you might get an answer

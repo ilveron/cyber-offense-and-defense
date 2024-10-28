@@ -1,0 +1,25 @@
+POST https://0a220062049a541a801c3a5d00fc0021.web-security-academy.net/login HTTP/1.1
+host: 0a220062049a541a801c3a5d00fc0021.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 83
+Origin: https://0a220062049a541a801c3a5d00fc0021.web-security-academy.net
+Connection: keep-alive
+Referer: https://0a220062049a541a801c3a5d00fc0021.web-security-academy.net/login
+Cookie: session=90QBF4EbYVmysKEVvzfG3UlP0BFfhcZ1
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+csrf=7fREWcT0eQwnnbKmI9R7spJu3jw8XpgZ&username=carlos&password=zi0rcubbhnuqa34n01moHTTP/1.1 302 Found
+Location: /my-account?id=carlos
+Set-Cookie: session=1ImVagO02CSMMiso0qT4qDsQH9k4r2rl; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 0
+

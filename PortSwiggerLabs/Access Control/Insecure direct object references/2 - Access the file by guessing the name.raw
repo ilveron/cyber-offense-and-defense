@@ -1,0 +1,30 @@
+GET https://0a220062049a541a801c3a5d00fc0021.web-security-academy.net/download-transcript/1.txt HTTP/1.1
+host: 0a220062049a541a801c3a5d00fc0021.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: session=90QBF4EbYVmysKEVvzfG3UlP0BFfhcZ1
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: attachment; filename="1.txt"
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 520
+
+CONNECTED: -- Now chatting with Hal Pline --
+You: Hi Hal, I think I've forgotten my password and need confirmation that I've got the right one
+Hal Pline: Sure, no problem, you seem like a nice guy. Just tell me your password and I'll confirm whether it's correct or not.
+You: Wow you're so nice, thanks. I've heard from other people that you can be a right ****
+Hal Pline: Takes one to know one
+You: Ok so my password is zi0rcubbhnuqa34n01mo. Is that right?
+Hal Pline: Yes it is!
+You: Ok thanks, bye!
+Hal Pline: Do one!
