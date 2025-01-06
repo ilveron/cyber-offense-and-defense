@@ -1,0 +1,72 @@
+GET https://0ae100be046ad45ea57d56ba0061006b.web-security-academy.net/post?postId=8 HTTP/1.1
+host: 0ae100be046ad45ea57d56ba0061006b.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://0ae100be046ad45ea57d56ba0061006b.web-security-academy.net/
+Cookie: session=vtRucgwLdVDNCe5BqQvZr5DxX0CnkHgx
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 2743
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href=/resources/labheader/css/academyLabHeader.css rel=stylesheet>
+        <link href=/resources/css/labs.css rel=stylesheet>
+        <title>Basic server-side template injection (code context)</title>
+    </head>
+        <script src="/resources/labheader/js/labHeader.js"></script>
+        <div id="academyLabHeader">
+            <section class='academyLabBanner'>
+                <div class=container>
+                    <div class=logo></div>
+                        <div class=title-container>
+                            <h2>Basic server-side template injection (code context)</h2>
+                            <a id='lab-link' class='button' href='/'>Back to lab home</a>
+                            <a class=link-back href='https://portswigger.net/web-security/server-side-template-injection/exploiting/lab-server-side-template-injection-basic-code-context'>
+                                Back&nbsp;to&nbsp;lab&nbsp;description&nbsp;
+                                <svg version=1.1 id=Layer_1 xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x=0px y=0px viewBox='0 0 28 30' enable-background='new 0 0 28 30' xml:space=preserve title=back-arrow>
+                                    <g>
+                                        <polygon points='1.4,0 0,1.2 12.6,15 0,28.8 1.4,30 15.1,15'></polygon>
+                                        <polygon points='14.3,0 12.9,1.2 25.6,15 12.9,28.8 14.3,30 28,15'></polygon>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class='widgetcontainer-lab-status is-notsolved'>
+                            <span>LAB</span>
+                            <p>Not solved</p>
+                            <span class=lab-status-icon></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div theme="">
+            <section class="maincontainer">
+                <div class="container is-page">
+                    <header class="navigation-header">
+                    </header>
+                    <h4>Internal Server Error</h4>
+                    <p class=is-warning>Traceback (most recent call last):
+  File &quot;&lt;string&gt;&quot;, line 16, in &lt;module&gt;
+  File &quot;/usr/local/lib/python2.7/dist-packages/tornado/template.py&quot;, line 348, in generate
+    return execute()
+  File &quot;&lt;string&gt;.generated.py&quot;, line 4, in _tt_execute
+OSError: [Errno 2] No such file or directory: &apos;/home/carlos/morale.txt&apos;</p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
