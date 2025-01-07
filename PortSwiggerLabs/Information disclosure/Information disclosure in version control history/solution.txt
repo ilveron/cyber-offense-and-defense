@@ -1,0 +1,9 @@
+Notice you can freely access the git index at "YOUR_LAB_ID.com/.git"
+
+You can download the entire content by using wget:
+wget -r YOUR_LAB_ID.com/.git
+
+Then use your favorite local git client to browse the older commit, in the diff of the "admin.conf" file,
+you will find out that once there was a hardcoded password, which was replaced.
+
+Use it to access the administrator account and delete carlos' account

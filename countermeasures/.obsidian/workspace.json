@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "98ab963106be1086",
+    "type": "split",
+    "children": [
+      {
+        "id": "408c03b49579c606",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c73be7c1281a1439",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1 - SQL Injection (SQLi).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1 - SQL Injection (SQLi)"
+            }
+          },
+          {
+            "id": "3a48444ea25079ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Authentication + Business Logic Vulnerabilities.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Authentication + Business Logic Vulnerabilities"
+            }
+          },
+          {
+            "id": "0940d902be4c41df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Authentication + Business Logic Vulnerabilities.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Authentication + Business Logic Vulnerabilities"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5dd90cf3009d4ffd",
+    "type": "split",
+    "children": [
+      {
+        "id": "77558f1f8c149823",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8340dde82003c66",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "955e43b8739e338b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9da1ec5e82f930f4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1d4e03dacf38e1fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "894031e52b76fc6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1eff66c0b3e0f367",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1 - SQL Injection (SQLi).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 1 - SQL Injection (SQLi)"
+            }
+          },
+          {
+            "id": "fb958ba0ec43058c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1 - SQL Injection (SQLi).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 1 - SQL Injection (SQLi)"
+            }
+          },
+          {
+            "id": "30a7fd1896ccc268",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "be5cc7af9f6aa780",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1 - SQL Injection (SQLi).md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 1 - SQL Injection (SQLi)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "0940d902be4c41df",
+  "lastOpenFiles": [
+    "04 - Information disclosure + Directory traversal.md",
+    "03 - Authentication + Business Logic Vulnerabilities.md",
+    "02 - SQL Injection (SQLi).md",
+    "create a link.md",
+    "Welcome.md"
+  ]
+}

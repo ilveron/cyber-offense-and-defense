@@ -1,0 +1,37 @@
+TRACE https://0a70000004c3408080820d5a006b00b0.web-security-academy.net/admin HTTP/1.1
+host: 0a70000004c3408080820d5a006b00b0.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: session=gHD8MTbFifAdg9KqYBXJrjUsNDrLelHu
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+
+HTTP/1.1 200 OK
+Content-Type: message/http
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 557
+
+TRACE /admin HTTP/1.1
+host: 0a70000004c3408080820d5a006b00b0.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Cookie: session=gHD8MTbFifAdg9KqYBXJrjUsNDrLelHu
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+X-Custom-IP-Authorization: 84.220.249.94
+
