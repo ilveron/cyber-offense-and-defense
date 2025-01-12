@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5729cd3de162fe6c",
+            "id": "70a4875c9f8e57f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08 - Cross-site scripting (XSS).md",
+                "file": "10 - Cross-origin resource sharing (CORS) + Clickjacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08 - Cross-site scripting (XSS)"
+              "title": "10 - Cross-origin resource sharing (CORS) + Clickjacking"
             }
           }
         ]
@@ -162,11 +162,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5729cd3de162fe6c",
+  "active": "70a4875c9f8e57f5",
   "lastOpenFiles": [
+    "origin.md",
+    "10 - Cross-origin resource sharing (CORS) + Clickjacking.md",
+    "Pasted image 20250112163402.png",
+    "09 - Cross-site request forgery (CSRF).md",
     "08 - Cross-site scripting (XSS).md",
-    "06 - Access control.md",
     "07 - Server-side request forgery (SSRF) + XXE injection.md",
+    "06 - Access control.md",
     "Pasted image 20250109151914.png",
     "Pasted image 20250109124650.png",
     "Pasted image 20250109124755.png",
