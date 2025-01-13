@@ -41,7 +41,23 @@ In detail:
 [...]{[...];s:5:"price";d:16570.15;}
 ```
 ## Problems
-If users have control over data that is deserialized, there's **nothing** that can prevent them from tampering with that object, **except** by adding some form **cryptographic signature**, but *why even bother*? 
+If users have control over data that is deserialized, there's **nothing** that can prevent them from tampering with that object, **except** by adding some form **cryptographic signature**, but *why even bother*?
+### PHP loose comparison operator
+In PHP, it is possible to exploit a "feature" of the language: the loose comparison operator (**\==**)
+
+Some examples:
+- `42 == "42"` evaluates to true. It is a nice feature to have, isn't it?
+- `42 == "42 reasons why I love you"` also evaluates to true, since 42 is the first number represented in the string. Ok, weird.
+- `0 == "There is no number here"` and `0 == "a12345"` and `0 == "0abcde"` also evaluates to true, since the string starts with the number `0` or it does not start with a number. (PHP 7.X and earlier)
+The last case in particular is dangerous. Imagine this case:
+```
+$login = unserialize($_COOKIE)
+if ($login['password'] == $password)
+{ // you are in }
+```
+
+What if a user could tamper with the password value in the login object and put `0` as its value?
+Unless the password has any digit in it, by doing so the password verification would be bypassed completely. **PAY ATTENTION**
 ## Prevention
 🔴 Just **don't use** serialization/deserialization.
 🟢 Use instead JSON encode/decode methods instead.

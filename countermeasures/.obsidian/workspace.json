@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "11 - Insecure deserialization + Server-side template injection.md",
+                "file": "06 - Access control.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11 - Insecure deserialization + Server-side template injection"
+              "title": "06 - Access control"
             }
           }
         ],
@@ -179,10 +179,13 @@
   },
   "active": "1bb7bbc18a9ed316",
   "lastOpenFiles": [
+    "05 - Command injection + File upload vulnerabilities.md",
+    "02 - SQL Injection (SQLi).md",
+    "04 - Information disclosure + Directory traversal.md",
+    "11 - Insecure deserialization + Server-side template injection.md",
     "Pasted image 20250113115528.png",
     "Pasted image 20250113115438.png",
     "10 - Cross-origin resource sharing (CORS) + Clickjacking.md",
-    "11 - Insecure deserialization + Server-side template injection.md",
     "origin.md",
     "Pasted image 20250112163402.png",
     "09 - Cross-site request forgery (CSRF).md",
@@ -192,10 +195,7 @@
     "Pasted image 20250109151914.png",
     "Pasted image 20250109124650.png",
     "Pasted image 20250109124755.png",
-    "05 - Command injection + File upload vulnerabilities.md",
-    "02 - SQL Injection (SQLi).md",
     "03 - Authentication + Business Logic Vulnerabilities.md",
-    "04 - Information disclosure + Directory traversal.md",
     "create a link.md",
     "Welcome.md"
   ]
