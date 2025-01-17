@@ -71,6 +71,12 @@ This way user input is properly escaped and treated as bare data
 ## Incorrect use of a template
 Far West!
 ![[Pasted image 20250113115528.png]]
+
+### Magic string for exploiting
+`${{<%[%'"}}%\`
+If an exception is raised, bingo! You probably found SSTI
+### Magic diagram for identifying the engine
+![[Pasted image 20250116121657.png]]
 ## Prevention
 🔴 Do not process user templates server-side
 🔴 Do not concatenate user strings with the template

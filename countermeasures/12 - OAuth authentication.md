@@ -5,7 +5,7 @@ OAuth is an authorization framework that enables **third-party applications** to
 
 ### A brief example
 Let's start break down how OAuth works by providing an example. 
-We need to authenticate the users to our application NoteShare.
+We need to authenticate users for our application "NoteShare".
 For our purposes we just need to know these information about the user: full name and email.
 Most people have a Google account. Google has all the information we need about the user. Google provides an OAuth service to share with us their data. Great!
 
@@ -42,6 +42,7 @@ Most people have a Google account. Google has all the information we need about 
 - If service provider and identity provider are hosted in **the same domain**, use session-based authentication, as it's **safer**
 ![[Pasted image 20250114193443.png]]
 ## Vulnerabilities & Prevention
+Vulnerabilities usually arise due to the flexibility and vague (by design) specificiation of OAuth. *Many configuration settings that are necessary for keeping users' data secure are optional*.
 - **USE ALLOW LISTS** - both to mitigate open redirects (token theft) and improper validation
 - **DO NOT** experiment with custom implementations, there exist well established libraries
 - **DO NOT** put excessive trust in confidentiality of tokens stored in browsers

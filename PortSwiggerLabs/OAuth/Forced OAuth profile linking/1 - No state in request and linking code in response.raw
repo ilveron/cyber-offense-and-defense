@@ -1,0 +1,29 @@
+GET https://oauth-0aa2007103e0331680692e20023d0062.oauth-server.net/auth?client_id=ru157122epzypeaisd7zf&redirect_uri=https://0aae00a4035533e5802b301e008b006c.web-security-academy.net/oauth-linking&response_type=code&scope=openid%20profile%20email HTTP/1.1
+host: oauth-0aa2007103e0331680692e20023d0062.oauth-server.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Connection: keep-alive
+Referer: https://0aae00a4035533e5802b301e008b006c.web-security-academy.net/
+Cookie: _session=L1Z7gduvFCaE5jDdpeMJp; _session.legacy=L1Z7gduvFCaE5jDdpeMJp
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+HTTP/1.1 302 Found
+X-Powered-By: Express
+Pragma: no-cache
+Cache-Control: no-cache, no-store
+Location: https://0aae00a4035533e5802b301e008b006c.web-security-academy.net/oauth-linking?code=2nUbcO9ID5hCXKyzUGA2d-XhkcKsLjLgtAFjwPnKfra
+Content-Type: text/html; charset=utf-8
+Set-Cookie: _session=L1Z7gduvFCaE5jDdpeMJp; path=/; expires=Fri, 31 Jan 2025 10:38:11 GMT; samesite=none; secure; httponly
+Set-Cookie: _session.legacy=L1Z7gduvFCaE5jDdpeMJp; path=/; expires=Fri, 31 Jan 2025 10:38:11 GMT; secure; httponly
+Date: Fri, 17 Jan 2025 10:38:11 GMT
+Connection: keep-alive
+Keep-Alive: timeout=15
+Content-Length: 287
+
+Redirecting to <a href="https://0aae00a4035533e5802b301e008b006c.web-security-academy.net/oauth-linking?code=2nUbcO9ID5hCXKyzUGA2d-XhkcKsLjLgtAFjwPnKfra">https://0aae00a4035533e5802b301e008b006c.web-security-academy.net/oauth-linking?code=2nUbcO9ID5hCXKyzUGA2d-XhkcKsLjLgtAFjwPnKfra</a>.

