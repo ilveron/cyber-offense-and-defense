@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Access control.md",
+                "file": "02 - SQL Injection (SQLi).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - Access control"
+              "title": "02 - SQL Injection (SQLi)"
             }
           }
         ],
@@ -179,12 +179,12 @@
   },
   "active": "b4c3cb5df2f11731",
   "lastOpenFiles": [
-    "07 - Server-side request forgery (SSRF) + XXE injection.md",
-    "06 - Access control.md",
-    "05 - Command injection + File upload vulnerabilities.md",
-    "04 - Information disclosure + Directory traversal.md",
     "03 - Authentication + Business Logic Vulnerabilities.md",
+    "04 - Information disclosure + Directory traversal.md",
+    "05 - Command injection + File upload vulnerabilities.md",
+    "06 - Access control.md",
     "02 - SQL Injection (SQLi).md",
+    "07 - Server-side request forgery (SSRF) + XXE injection.md",
     "13 - JWT Attacks.md",
     "08 - Cross-site scripting (XSS).md",
     "12 - OAuth authentication.md",
