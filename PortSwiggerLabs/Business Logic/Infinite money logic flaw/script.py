@@ -1,3 +1,5 @@
+### From a certain point onwards, the script will not work anymore. ###
+
 from lxml import html
 import requests
 from rich.console import Console
@@ -18,7 +20,6 @@ def get_csrf_token(endpoint):
 
 def do_login(username, password):
     csrf_token = get_csrf_token("login")
-    print(f"CSRF: {csrf_token}") 
     response = session.post(f"{SERVER}/login", data={"csrf":csrf_token, "username":username, "password":password})
     return response.status_code
 
