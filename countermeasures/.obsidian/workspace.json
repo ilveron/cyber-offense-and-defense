@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - SQL Injection (SQLi).md",
+                "file": "10 - Cross-origin resource sharing (CORS) + Clickjacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - SQL Injection (SQLi)"
+              "title": "10 - Cross-origin resource sharing (CORS) + Clickjacking"
             }
           }
         ],
@@ -179,15 +179,15 @@
   },
   "active": "b4c3cb5df2f11731",
   "lastOpenFiles": [
+    "06 - Access control.md",
+    "12 - OAuth authentication.md",
+    "13 - JWT Attacks.md",
+    "02 - SQL Injection (SQLi).md",
     "03 - Authentication + Business Logic Vulnerabilities.md",
     "04 - Information disclosure + Directory traversal.md",
     "05 - Command injection + File upload vulnerabilities.md",
-    "06 - Access control.md",
-    "02 - SQL Injection (SQLi).md",
     "07 - Server-side request forgery (SSRF) + XXE injection.md",
-    "13 - JWT Attacks.md",
     "08 - Cross-site scripting (XSS).md",
-    "12 - OAuth authentication.md",
     "Pasted image 20250116205559.png",
     "11 - Insecure deserialization + Server-side template injection.md",
     "Pasted image 20250116121657.png",
