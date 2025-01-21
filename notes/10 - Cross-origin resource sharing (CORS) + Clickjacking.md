@@ -7,10 +7,10 @@ It is a relaxation of the **Same-Origin Policy** (SOP)
 The SOP is the **default** origin policy in browsers.
 As the name might suggest, it only allows access to resources within the same origin.
 #### Example
-A script in `https://example.com` can only access to resources coming from the exact same origin (i.e., `https://example.com`).
+A script in `https://example.com` can only access resources coming from the exact same origin (i.e., `https://example.com`).
 Even `https://api.example.com` and `http://example.com` are considered a different origins.
 
-It is good to have a strict default policy, but many times web applications need to request and access resources from external application (e.g., to consume an API)
+It is good to have a strict default policy, but many times web applications need to request and access resources from external applications (e.g., to consume an API)
 ## Relaxing SOP (by implementing CORS)
 Browsers add the `Origin: <your_origin_here>` header in the HTTP request, and expect the header `Access-Control-Allow-Origin: <that_same_domain_here>` in the HTTP response. If the origin is not listed in the response header the browser won't allow access to the resources of the response (even if the response reached the user).
 
@@ -25,14 +25,13 @@ Wildcards can be used to avoid listing a big number of origins in the response h
 	`Access-Control-Allow-Origin: *`
 ### Prevention
 #### ⛔ DON'T
-Pay attention, you **MUST NOT DO** what's stated below
-- Use `Access-Control-Allow-Credentials: true`. It allows access to cookies and authentication headers. 
-- Use `Access-Control-Allow-Origin: null`. It allows the null origin, effectively disabling CORS (as anyone can put `Origin: null` in the request headers)
-- Reflect blindly the request's origin in the response header, as this would also disable CORS
-- Use flawed regexes to validate the origin. 
+- **Do not** use `Access-Control-Allow-Credentials: true`. It allows access to cookies and authentication headers. 
+- **Do not** use `Access-Control-Allow-Origin: null`. It allows the null origin, effectively disabling CORS (as anyone can put `Origin: null` in the request headers)
+- **Do not** blindly reflect the request's origin in the response header, as this would also disable CORS
+- **Do not** use flawed regexes to validate the origin. 
 #### ✅ DO
 - Specify the `Access-Control-Allow-Origin` header if the response contains sensitive data
-- Use allow lists in the backend (the one populating the `Access-Control-Allow-Origin` header)
+- Use allow lists in the backend (which generates the `Access-Control-Allow-Origin` header)
 - Think deeply if you really need `Access-Control-Allow-Origin: *`
 - Meditate profoundly if you really need `Access-Control-Allow-Crendentials: true`
 #### Headers incompatibility

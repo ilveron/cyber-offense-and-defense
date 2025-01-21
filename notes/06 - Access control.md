@@ -1,8 +1,8 @@
 We are talking about **authorization** (AuthZ)
-Policies are set of constraint made of triples:
-- **Subject**: User, group, role
-- **Object**: A resource of the system, another user, the policy constraint themselves
-- **Access right**: read, write, execute etc...
+Policies are set of constraint made of triples `(Subject, Object, Role)` where:
+- **Subject**: User, group, role...
+- **Object**: A resource of the system, another user, the policy constraint themselves...
+- **Access right**: read, write, execute...
 
 Policies are often combined (i.e., not mutually exclusive). Sometimes this can be a bad idea.
 
@@ -17,13 +17,13 @@ The owner of a resource states who has and who hasn't certain access rights to h
 It's the Access Matrix decomposed by **columns**
 e.g., File1 -> (UserA, rw), (UserC, r) - *UserB has no access rights on File1* 
 
-*Perfect for checking the access rights of all the users on **fixed resource***
+*Perfect for checking the access rights of all the users per **each resource**
 
 #### Capability Tickets
 It's the Access Matrix decomposed by **rows**
-e.g., UserA -> (File1, rw), (File2, r) - *no access rights on File3*
+e.g., UserA -> (File1, `rw-`), (File2, `r--`) - *no access rights on File3*
 
-*Perfect for checking the access rights of a **fixed user** over all the resources*
+*Perfect for checking the access rights of **each user** over all the resources*
 
 #### Authorization Tables
 Best of both worlds

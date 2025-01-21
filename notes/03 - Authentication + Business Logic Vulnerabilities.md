@@ -32,7 +32,7 @@ Authentication vulnerabilities arise because of the implementation of weak authe
 ==NEVER EVER store users' password==, neither in clear nor encrypted!
 Store instead the hash value of the password (cannot be reversed if the algorithm used isn't weak), and possibly hash the password multiple times, best if combined with a nonce (salt). The latter protects against replay attacks and attacks done via rainbow tables.
 
-Avoid using easily guessable usernames (especially for high-privileged accounts), use random suffixes
+Avoid using easily guessable usernames (especially for high-privileged accounts), use random suffixes (e.g., *admin-arandomstringhere*)
 
 ## More prevention
 #### Take care with user credentials

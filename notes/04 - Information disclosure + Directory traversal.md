@@ -13,7 +13,7 @@
 Use **FileSystem APIs**, get the canonical form of the path and ==validate it== following your business rules
 #### DON'Ts ❌
 - Use strings
-- Reject strings solely by the presence of "../" => One can use an absolute path
-- Remove any "../" (non recursively) => One can use "....//", that after sanification becomes "../"
+- Reject strings solely by the presence of `../` => One can use an absolute path
+- Remove any `../` (non recursively) => One can use `....//`, which after sanification becomes `../`
 - Only accept paths with a given prefix => One can satisfy the constraint and still do whatever
 - Only accept paths with a fixed suffix => One can use a null byte before the suffix, effectively nullifying it

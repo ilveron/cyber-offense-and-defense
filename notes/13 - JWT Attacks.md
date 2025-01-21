@@ -10,7 +10,7 @@ A JWT is made of three parts separated by a . (dot)
 
 The header and payload parts are simply base64-encoded, while the signature is derived from the first two parts using HMAC (Hash-based Message Authentication Code)
 
-*NOTE*: The signature part can be missing if the signature algorithm specified in the header is `none`, but the . symbol before is mandatory (i.e., a JWT *always* contains a dot after the *header* and the *payload* part)
+*NOTE*: A JWT **always** contains a `.` (dot) after the *header* and the *payload* part. Even when the signing algorithm specified is `none`
 ## Vulnerabilities
 JWT vulnerabilities typically arise due to flawed JWT handling within the application. Since the header and payload parts are in clear (in JWT/JWS) and tamperable, it all relies on the secrecy of the server's secret key, as it is used to verify the signature.
 
@@ -18,4 +18,4 @@ JWT vulnerabilities typically arise due to flawed JWT handling within the applic
 - Accepting tokens with tampered algorithm
 - Weak encryption keys
 - Misunderstanding symmetric and asymmetric encryption (in symmetric cryptography once the single key is leaked, it's game over)
-- Using JWS thinking it is crpytographically encrypted
+- Using JWS thinking it is cryptographically encrypted

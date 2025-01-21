@@ -4,9 +4,9 @@ Is an authentication process that allows users to authenticate on multiple servi
 OAuth is an authorization framework that enables **third-party applications** to obtain access to **limited set** of the user's resources on a server **without sharing** the user's **credentials**.
 
 ### A brief example
-Let's start break down how OAuth works by providing an example. 
+Let's start breaking down how OAuth works by providing an example. 
 We need to authenticate users for our application "NoteShare".
-For our purposes we just need to know these information about the user: full name and email.
+For our purposes we just need to know the following information about the user: full name and email.
 Most people have a Google account. Google has all the information we need about the user. Google provides an OAuth service to share with us their data. Great!
 
 ### Keywords

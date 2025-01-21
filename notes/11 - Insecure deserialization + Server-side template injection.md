@@ -26,13 +26,13 @@ Its correspondent class and deserialization:
 
 In detail:
 ```
-// An object of class Car, with 4 properties
+// An object of class Car, with 4 properties/attributes
 0:3:"Car":4:{[...]}  
 
 // Has a property named "brand", to which is assigned the string value "Ford"
 [...]{s:5:"brand";s:4:"Ford";[...]}
 
-// Has another string value ("Fiesta")
+// Has another string property (model = "Fiesta")
 
 // Has a property named "year", to which is assigned the integer value 2018
 [...]{[...];s:4:"year";i:2018;[...]}
@@ -48,7 +48,7 @@ In PHP, it is possible to exploit a "feature" of the language: the loose compari
 Some examples:
 - `42 == "42"` evaluates to true. It is a nice feature to have, isn't it?
 - `42 == "42 reasons why I love you"` also evaluates to true, since 42 is the first number represented in the string. Ok, weird.
-- `0 == "There is no number here"` and `0 == "a12345"` and `0 == "0abcde"` also evaluates to true, since the string starts with the number `0` or it does not start with a number. (PHP 7.X and earlier)
+- `0 == "There is no number here"` and `0 == "a12345"` and `0 == "0abcde"` also evaluate to true, since the string starts with the number `0` or it does not start with a number. (PHP 7.X and earlier)
 The last case in particular is dangerous. Imagine this case:
 ```
 $login = unserialize($_COOKIE)
@@ -57,12 +57,12 @@ if ($login['password'] == $password)
 ```
 
 What if a user could tamper with the password value in the login object and put `0` as its value?
-Unless the password has any digit in it, by doing so the password verification would be bypassed completely. **PAY ATTENTION**
+Unless the password has any digit in it (except `0`), by doing so the password verification would be bypassed completely. **PAY ATTENTION**
 ## Prevention
 🔴 Just **don't use** serialization/deserialization.
 🟢 Use instead JSON encode/decode methods instead.
 # Server-Side Template Injection (SSTI)
-They occur when user input is concatenated as text directly into a template.
+It occurs when user input is concatenated as text directly into a template.
 If what is passed in is not escaped there's no way to distinguish user data from template text. That way an attacker can essentially have all benefits of XSS + RCE: **a disaster**!
 
 ## Correct use of a template
