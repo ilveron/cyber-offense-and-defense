@@ -1,0 +1,6 @@
+The comment's text of any post is displayed within a <p> element.
+So we just need to post a comment like this one
+
+</p><img src/onerror=alert()>
+
+And indeed we have the Stored DOM XSS

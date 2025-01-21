@@ -1,11 +1,12 @@
+#######################################################################
+### From a certain point onwards, the script will not work anymore. ###
+#######################################################################
+
 from lxml import html
 import requests
 from rich.console import Console
 from base64 import b64encode, b64decode
 from urllib.parse import quote, unquote
-
-
-Console()
 
 SERVER = "https://0abf00d7039d62038756497d006700ca.web-security-academy.net"
 

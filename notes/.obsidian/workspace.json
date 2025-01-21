@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "153d7deb6d251488",
+        "id": "cc92f88828746406",
         "type": "tabs",
         "children": [
           {
-            "id": "9b05b85cb84a14cc",
+            "id": "4623bc0594f2a27d",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,11 +156,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8340dde82003c66",
+  "active": "4623bc0594f2a27d",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "13 - JWT Attacks.md",
     "12 - OAuth authentication.md",
     "11 - Insecure deserialization + Server-side template injection.md",
-    "13 - JWT Attacks.md",
     "10 - Cross-origin resource sharing (CORS) + Clickjacking.md",
     "09 - Cross-site request forgery (CSRF).md",
     "08 - Cross-site scripting (XSS).md",
